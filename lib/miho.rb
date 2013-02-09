@@ -1,7 +1,7 @@
 class Miho
   attr_reader :matched, :last_lines
 
-  def initialize()
+  def initialize(options = {})
     @terms = Array.new
     @matched = nil
     @checked = 0
@@ -11,8 +11,10 @@ class Miho
     @extras = Hash.new
 
     @last_lines = Array.new
-    
-    get_transcript_file
+
+    @extras_filename = options[:extras]
+
+    get_transcript_file(options[:transcript])
   end
 
   def learn(*terms, &block)
@@ -47,7 +49,7 @@ class Miho
   end
 
   def repl
-    load_extras('extras.csv')
+    load_extras
 
     order_terms
 
@@ -80,7 +82,7 @@ class Miho
       print "[You] "
     end
 
-    save_extras('extras.csv')
+    save_extras
   end
 
   def load(filename)
@@ -94,23 +96,27 @@ class Miho
 
   private
 
-  def load_extras(filename)
-    x = Hash.new
+  def load_extras
+    if @extras_filename
+      x = Hash.new
 
-    if File.exist?(filename)
-      File.open(filename).each do |line|
-        input, output = line.chomp.split(/\t/)
-         @extras[input] = output
-       end
+      if File.exist?(@extras_filename)
+        File.open(@extras_filename).each do |line|
+          input, output = line.chomp.split(/\t/)
+           @extras[input] = output
+         end
+      end
     end
   end
 
-  def save_extras(filename)
-    f = File.open(filename, "w")
-    @extras.each do |input, output|
-      f.puts "%s\t%s" % [input, output]
+  def save_extras
+    if @extras_filename
+      f = File.open(@extras_filename, "w")
+      @extras.each do |input, output|
+        f.puts "%s\t%s" % [input, output]
+      end
+      f.close
     end
-    f.close
   end
 
   def process(term)
@@ -138,7 +144,7 @@ class Miho
   end
 
   def say(line, transcript_only = false)
-    @transcript.puts line
+    @transcript.puts line if @transcript
     puts line unless transcript_only
   end
 
@@ -154,8 +160,12 @@ class Miho
     say text if @debug
   end
 
-  def get_transcript_file
-    @transcript = File.new("transcript.txt", "a")
+  def get_transcript_file(filename = nil)
+    if filename
+      @transcript = File.new(filename, "a")
+    else
+      @transcript = nil
+    end
   end
 
   # This makes sure that the longer patterns are matched first
@@ -260,8 +270,8 @@ class Miho
 end
 
 class Object
-  def miho(&block)
-    x = Miho.new
+  def miho(options = {}, &block)
+    x = Miho.new(options)
     
     x.instance_eval(&block)
   end
