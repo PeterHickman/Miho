@@ -1,0 +1,1 @@
+Miho is a simple chat bot written in Ruby
