@@ -236,7 +236,7 @@ learn "WHAT IS YOUR THEORY *" do
 end
 
 learn "WHAT IS YOUR RELIGON" do
-  response = [get :bot_religion, "I was raised as a #{get :bot_religion}. What are you?"]
+  response = ["#{get :bot_religion}", "I was raised as a #{get :bot_religion}. What are you?"]
   response[rand(response.size)]
 end
 
