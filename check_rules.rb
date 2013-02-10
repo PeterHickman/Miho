@@ -10,7 +10,7 @@ def learn(*patterns, &block)
 
   patterns.map{|x| x.downcase.strip.gsub(/_/, "*")}.each do |pattern|
     if $patterns.has_key?(pattern)
-      puts "Rule #{$rule_number} duplicates #{$patterns[pattern]} with #{pattern}"
+      puts "Rule #{$rule_number} duplicates #{$patterns[pattern]} with '#{pattern}'"
     else
       $patterns[pattern] = $rule_number
     end
@@ -23,4 +23,4 @@ rescue Exception => e
   puts "Error found at #{$rule_number}: #{e}"
 end
 
-puts "There are unique #{$patterns.size} patterns for #{$rule_number} rules"
+puts "There are #{$patterns.size} unique patterns for #{$rule_number} rules"
