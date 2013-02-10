@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'lib/miho'
+require './lib/miho'
 
 # Optional parameters for miho are:
 #
