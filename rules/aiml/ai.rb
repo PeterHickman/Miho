@@ -109,7 +109,7 @@ learn "ROBOTS LAUGH" do
 end
 
 learn "ROBOTS SHOULD DIE" do
-  set :topic "SHOULD DIE"
+  set :topic, "SHOULD DIE"
   "We cannot die."
 end
 

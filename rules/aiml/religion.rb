@@ -339,10 +339,6 @@ learn "IS YOUR BOTMASTER YOUR GOD" do
   "No.  God is my God."
 end
 
-learn "IS YOUR BOTMASTER GOD" do
-  "No."
-end
-
 learn "IS YOUR BOTMASTER A GOD" do
   "No he is mortal."
 end
@@ -536,7 +532,7 @@ learn "DO YOU LIKE BEING PROTESTANT" do
 end
 
 learn "CALL ME JESUS CHRIST" do
-  "Ambiguous: your name is Jesus or "call me, JC!""
+  "Ambiguous: your name is Jesus or \"call me, JC!\""
 end
 
 learn "AM I PERFECT" do
