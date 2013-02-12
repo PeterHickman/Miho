@@ -3,6 +3,7 @@ class Miho
 
   def initialize(options = {})
     @terms = Array.new
+    @memory = Hash.new
     @matched = nil
     @checked = 0
     @total = 0
@@ -94,6 +95,18 @@ class Miho
     end
   end
 
+  def get(k)
+    k = validate_key(k)
+
+    @memory[k]
+  end
+
+  def set(k, v)
+    k = validate_key(k)
+
+    @memory[k] = v
+  end
+
   private
 
   def load_extras
@@ -165,6 +178,16 @@ class Miho
       @transcript = File.new(filename, "a")
     else
       @transcript = nil
+    end
+  end
+
+  def validate_key(key)
+    if key.class == String
+      key.downcase.to_sym
+    elsif key.class == Symbol
+      key.to_s.downcase.to_sym
+    else
+      raise RuntimeError.new("Key for get/set should be a symbol or string. Not a #{key.class}")
     end
   end
 
