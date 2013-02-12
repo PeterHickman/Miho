@@ -1,6 +1,94 @@
 class Miho
   attr_reader :matched, :last_lines
 
+  class PatternReader
+    ##
+    # Code to expand the sentence forms given to the learn method
+    ##
+
+    def self.parse_sentence(string)
+      expand(find_options(string)).map do |x|
+        x.join(' ').gsub(/_|\s+/, ' ').strip
+      end
+    end
+
+    private
+
+    # Find tokens enclosed with [ and ] and turn them into a list
+    # with an optional blank element. So [tom] will become [' ', 'tom']
+    # and [tom|dick|harry] will become [' ', 'tom', 'dick', 'harry']
+
+    def self.find_options(string)
+      optionals = false
+      results = Array.new
+
+      x = ''
+
+      string.scan(/./u).each do |char|
+        if optionals == true
+          case char
+          when '['
+            raise "'[' followed by another '[' is not right"
+          when ']'
+            results << [' ', find_alternates(x)].flatten
+            optionals = false
+            x = ''
+          else
+            x << char
+          end
+        else
+          case char
+          when '['
+            optionals = true
+            results << find_alternates(x) unless x == ''
+            x = ''
+          when ']'
+            raise "']' was not proceeded by a '['"
+          when ' '
+            results << find_alternates(x) unless x == ''
+            x = ''
+          else
+            x << char
+          end
+        end
+      end
+
+      results << find_alternates(x) unless x == ''
+
+      return results
+    end
+
+    # Turn alternates such as 'tom|dick|harry' into an array
+    # ['tom', 'dick', 'harry'] but leave strings without the '\'
+    # as they are
+
+    def self.find_alternates(string)
+      string.index('|') ? string.split(/\|/) : string
+    end
+
+    # Given a list like [1,2,[3,4]] expand it into [1,2,3] and [1,2,4]
+
+    def self.expand(heads, existing = [[]])
+      if heads.empty?
+        return existing
+      else
+        head = heads.shift
+        longer = Array.new
+        existing.each do |e|
+          if head.class == Array
+            head.each do |y|
+              longer << (e.dup << y)
+            end
+          else
+            longer << (e.dup << head)
+          end
+        end
+
+        return expand(heads, longer)
+      end
+    end
+  end
+
   def initialize(options = {})
     @terms = Array.new
     @memory = Hash.new
@@ -20,7 +108,7 @@ class Miho
 
   def learn(*terms, &block)
     terms.each do |term|
-      parse_sentence(term).each do |x|
+      PatternReader.parse_sentence(term).each do |x|
         @total += 1
         @terms << {
           :source => term,
@@ -205,90 +293,6 @@ class Miho
 
   def order_terms
     @terms.sort!{|a,b| b[:size] <=> a[:size]}
-  end
-
-  ##
-  # Code to expand the sentence forms given to the learn method
-  ##
-
-  def parse_sentence(string)
-    expand(find_options(string)).map do |x|
-      x.join(' ').gsub(/_|\s+/, ' ').strip
-    end
-  end
-
-  # Find tokens enclosed with [ and ] and turn them into a list
-  # with an optional blank element. So [tom] will become [' ', 'tom']
-  # and [tom|dick|harry] will become [' ', 'tom', 'dick', 'harry']
-
-  def find_options(string)
-    optionals = false
-    results = Array.new
-
-    x = ''
-
-    string.scan(/./u).each do |char|
-      if optionals == true
-        case char
-        when '['
-          raise "'[' followed by another '[' is not right"
-        when ']'
-          results << [' ', find_alternates(x)].flatten
-          optionals = false
-          x = ''
-        else
-          x << char
-        end
-      else
-        case char
-        when '['
-          optionals = true
-          results << find_alternates(x) unless x == ''
-          x = ''
-        when ']'
-          raise "']' was not proceeded by a '['"
-        when ' '
-          results << find_alternates(x) unless x == ''
-          x = ''
-        else
-          x << char
-        end
-      end
-    end
-
-    results << find_alternates(x) unless x == ''
-
-    return results
-  end
-
-  # Turn alternates such as 'tom|dick|harry' into an array
-  # ['tom', 'dick', 'harry'] but leave strings without the '\'
-  # as they are
-
-  def find_alternates(string)
-    string.index('|') ? string.split(/\|/) : string
-  end
-
-  # Given a list like [1,2,[3,4]] expand it into [1,2,3] and [1,2,4]
-
-  def expand(heads, existing = [[]])
-    if heads.empty?
-      return existing
-    else
-      head = heads.shift
-      longer = Array.new
-      existing.each do |e|
-        if head.class == Array
-          head.each do |y|
-            longer << (e.dup << y)
-          end
-        else
-          longer << (e.dup << head)
-        end
-      end
-
-      return expand(heads, longer)
-    end
   end
 end
 
