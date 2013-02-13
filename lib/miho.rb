@@ -223,18 +223,29 @@ class Miho
   def process(term)
     @checked = 0
 
+    response = nil
+
     @terms.each do |possible|
       @checked += 1
 
       y = possible[:regexp].match(term)
       if y
         @matched = y[1..-1]
-        return possible[:block].call
+        response = possible[:block].call
+        break
       end
     end
 
-    # Returns a learnt phrase or nil
-    @extras[term]
+    if response
+      if response.class == Array
+        response[rand(response.size)]
+      else
+        response
+      end
+    else
+      # Returns a learnt phrase or nil
+      @extras[term]
+    end
   end
 
   def remember(input, output)
