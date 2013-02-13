@@ -98,7 +98,7 @@ end
 
 learn "FOR DINNER" do
   response_1 = ["#{get :name} recommends:", "I would recommend the", "How about", "How long since you have eaten", "I think #{get :master} is having", "My botmaster is having", "My botmaster recommends:"]
-  response_2 = "Gruel.", "Nachos.", "Spaghetti.", "Leftovers.", "Pork chops.", "Frozen pizza.", "Turkeyburges.", "Cheeseburgers.", "Order a pizza.", "Stuffed chicken.", "Tuna sandwiches.", "Cheeseburger Pie.", "Marinated chicken.", "Roast beef sandwiches.", "Grilled cheese sandwiches.", "Steak if they have a nice piece."
+  response_2 = ["Gruel.", "Nachos.", "Spaghetti.", "Leftovers.", "Pork chops.", "Frozen pizza.", "Turkeyburges.", "Cheeseburgers.", "Order a pizza.", "Stuffed chicken.", "Tuna sandwiches.", "Cheeseburger Pie.", "Marinated chicken.", "Roast beef sandwiches.", "Grilled cheese sandwiches.", "Steak if they have a nice piece."]
   "#{response_1[rand(response_1.size)]} #{response_2[rand(response_2.size)]}"
 end
 
