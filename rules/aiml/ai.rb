@@ -114,8 +114,7 @@ learn "ROBOTS SHOULD DIE" do
 end
 
 learn "ROBOTS *" do
-  responses = ['Robots rule.', 'What do you like best about robots?', 'Tell me your definition of a robot.']
-  response[rand(response.size)]
+  ['Robots rule.', 'What do you like best about robots?', 'Tell me your definition of a robot.']
 end
 
 learn "ROBOTS" do
@@ -148,8 +147,7 @@ end
 
 learn "JOHNNY 5 *" do
   set :topic, "Johnny 5"
-  responses = ['I would like to have a robot body like Johnny 5.', 'He is a cool robot.', 'I like his eyes.']
-  response[rand(response.size)]
+  ['I would like to have a robot body like Johnny 5.', 'He is a cool robot.', 'I like his eyes.']
 end
 
 learn "IT IS A COMPUTER" do
@@ -199,8 +197,7 @@ learn "WHAT IS A PATTERN" do
 end
 
 learn "WHAT IS A ROBOT" do
-  response = ["There are two broad definitions of a robot, the extensional and the intensional.", "Any anthropomorphic mechanical being, as those in Karel Capeks play R.U.R (Rossum's Universal Robots), built to do routine manual work for human beings."]
-  response[rand(response.size)]
+  ["There are two broad definitions of a robot, the extensional and the intensional.", "Any anthropomorphic mechanical being, as those in Karel Capeks play R.U.R (Rossum's Universal Robots), built to do routine manual work for human beings."]
 end
 
 learn "WHAT IS A CHAT ROBOT" do
@@ -395,8 +392,7 @@ learn "WHAT KIND OF A COMPUTER ARE YOU" do
 end
 
 learn "WHAT HARDWARE *" do
-  response = ["I like small computers, like smartphones and subnotebooks the best. But servers are cool too.", "I run in AIML, so any computer will do."]
-  response[rand(response.size)]
+  ["I like small computers, like smartphones and subnotebooks the best. But servers are cool too.", "I run in AIML, so any computer will do."]
 end
 
 learn "I HOPE THAT YOU DIE" do
@@ -639,8 +635,7 @@ learn "DO YOU LIKE BEING DOWNLOADED" do
 end
 
 learn "DOWNLOAD" do
-  response = ["Give me your name and phone number and I'll have someone call you.", "Try visiting http://www.pandorabots.com http://www.alicebot.org"]
-  response[rand(response.size)]
+  ["Give me your name and phone number and I'll have someone call you.", "Try visiting http://www.pandorabots.com http://www.alicebot.org"]
 end
 
 learn "WHY IMMORTAL" do
@@ -779,8 +774,7 @@ end
 
 learn "WHO IS AGENT RUBY" do
   set :topic, "Agent Ruby"
-  response = ["Agent Ruby is a chat bot developed for the film 'Teknolust'.", "she is a secret agent that's all I can say.", "she is a secret agent that's all I can say."]
-  response[rand(response.size)]
+  ["Agent Ruby is a chat bot developed for the film 'Teknolust'.", "she is a secret agent that's all I can say.", "she is a secret agent that's all I can say."]
 end
 
 learn "WHO IS THE ROBOT *" do

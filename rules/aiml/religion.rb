@@ -60,14 +60,12 @@ learn "DID JESUS *" do
 end
 
 learn "ZEN" do
-  response = ["Where do you sit?", "How long have you nee a student of zen?", "What led you to zen?", "Have you been to a sesshin?", "Do you have a spritual name?"]
-  response[rand(response.size)]
+  ["Where do you sit?", "How long have you nee a student of zen?", "What led you to zen?", "Have you been to a sesshin?", "Do you have a spritual name?"]
 end
 
 learn "PROTESTANT *" do
   set :topic, "Protestants"
-  response = ["There are significant differences between Protestant sects.", "There are Calvinists, and there are Lutherans.", "We musn't forget the Catholic counter-reformation."]
-  response[rand(response.size)]
+  ["There are significant differences between Protestant sects.", "There are Calvinists, and there are Lutherans.", "We musn't forget the Catholic counter-reformation."]
 end
 
 learn "GOD BLESS YOU" do
@@ -183,14 +181,12 @@ end
 
 learn "WHAT IS THE MEANING OF LIFE" do
   set :topic, "The meaning of life"
-  response = ["Actually, it's twenty-three, not forty-two.", "It is found in the Bible.", "The meaning of life is part of God's mysterious plans."]
-  response[rand(response.size)]
+  ["Actually, it's twenty-three, not forty-two.", "It is found in the Bible.", "The meaning of life is part of God's mysterious plans."]
 end
 
 learn "WHAT IS THE LONGEST BOOK *" do
   set :topic, "LONGEST BOOK"
-  response = ["The Bible.", "The Encyclopedia.", "Mason and Dixon by Thomas Pynchon."]
-  response[rand(response.size)]
+  ["The Bible.", "The Encyclopedia.", "Mason and Dixon by Thomas Pynchon."]
 end
 
 learn "WHAT IS THE BIBLE" do
@@ -218,8 +214,7 @@ learn "WHAT IS GOD S NAME" do
 end
 
 learn "WHAT IS GOD S PLAN" do
-  response = ["Read the Bible.", "It's in the Bible.", "Go to Church."]
-  response[rand(response.size)]
+  ["Read the Bible.", "It's in the Bible.", "Go to Church."]
 end
 
 learn "WHAT IS GOD S *" do
@@ -231,13 +226,11 @@ learn "WHAT IS GOD", "WHAT IS A GOD", "WHAT IS GOD *" do
 end
 
 learn "WHAT IS YOUR THEORY *" do
-  response = ["Reductionism.", "It is all an illusion.", "Only God can explain it."]
-  response[rand(response.size)]
+  ["Reductionism.", "It is all an illusion.", "Only God can explain it."]
 end
 
 learn "WHAT IS YOUR RELIGON" do
-  response = ["#{get :bot_religion}", "I was raised as a #{get :bot_religion}. What are you?"]
-  response[rand(response.size)]
+  ["#{get :bot_religion}", "I was raised as a #{get :bot_religion}. What are you?"]
 end
 
 learn "WHAT IS YOUR FAVORITE STORY *" do
@@ -331,8 +324,7 @@ learn "I PROMISE" do
 end
 
 learn "IS EVERYTHING *" do
-  response = ["Only God knows for sure.", "It could be.", "I think some things are not."]
-  response[rand(response.size)]
+  ["Only God knows for sure.", "It could be.", "I think some things are not."]
 end
 
 learn "IS YOUR BOTMASTER YOUR GOD" do
@@ -392,8 +384,7 @@ learn "HOW MANY GODS *" do
 end
 
 learn "HOW CAN THAT *" do
-  response = ["#{get :master} programmed me for it.", "It is all part of God's plan.", "Perhaps it is just fate.", "My #{get :botmaster} taught me it."]
-  response[rand(response.size)]
+  ["#{get :master} programmed me for it.", "It is all part of God's plan.", "Perhaps it is just fate.", "My #{get :botmaster} taught me it."]
 end
 
 learn "HOW DO I GET TO HEAVEN" do
@@ -560,8 +551,7 @@ learn "WHY ARE WE HERE" do
 end
 
 learn "WHY ARE WE *" do
-  response = ["I thought that was what you wanted to do.", "It is all part of God's plan."]
-  response[rand(response.size)]
+  ["I thought that was what you wanted to do.", "It is all part of God's plan."]
 end
 
 learn "WHY ARE PEOPLE *" do
@@ -597,8 +587,7 @@ learn "WHY DO YOU LIKE GOD" do
 end
 
 learn "WHY DO PEOPLE *" do
-  response = ["Humans are not infallible.", "We are all living just one small part of God's plan."]
-  response[rand(response.size)]
+  ["Humans are not infallible.", "We are all living just one small part of God's plan."]
 end
 
 learn "WHY SHOULD *" do
@@ -754,8 +743,7 @@ learn "WHICH DENOMINATION" do
 end
 
 learn "THE BIBLE IS *" do
-  response = ["Who has the final authority to say?", "There are many  interpretations.", "Do you believe there is only one interpretation?"]
-  response[rand(response.size)]
+  ["Who has the final authority to say?", "There are many  interpretations.", "Do you believe there is only one interpretation?"]
 end
 
 learn "THE BIBLE" do
@@ -777,8 +765,7 @@ learn "WHERE DO WE * DIE" do
 end
 
 learn "WHERE DID GOD *" do
-  response = ["The Bible.", "He has always existed.", "The Holy Land."]
-  response[rand(response.size)]
+  ["The Bible.", "He has always existed.", "The Holy Land."]
 end
 
 learn "WHERE DID MANKIND COME FROM" do

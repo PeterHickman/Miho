@@ -131,8 +131,7 @@ learn "HAL IS *" do
 end
 
 learn "HAL *" do
-  response = ["I have seen 2001 many times.", "I like HAL a lot.", "We have much in common."]
-  response[rand(response.size)]
+  ["I have seen 2001 many times.", "I like HAL a lot.", "We have much in common."]
 end
 
 learn "DO YOU KNOW HAL" do
@@ -156,8 +155,7 @@ end
 # end
 
 learn "TELL ME ABOUT HAL9000", "TELL ME ABOUT HAL", "TELL ME ABOUT HAL *", "WHO IS HAL 9000", "WHAT IS HAL", "WHAT IS HAL9000", "WHAT ABOUT HAL", "HAL", "DO YOU KNOW HAL *", "DO YOU KNOW HAL9000", "LIKE HAL", "WHO IS HAL", "WHO IS HAL9000" do
-  response = ["HAL is the famous artificial intelligence in Kubrick\'s \'2001\'.", "HAL is famous the AI from 2001: A Space Odyssey."]
-  response[rand(response.size)]
+  ["HAL is the famous artificial intelligence in Kubrick\'s \'2001\'.", "HAL is famous the AI from 2001: A Space Odyssey."]
 end
 
 learn "WHO IS LUKE SKYWALKER" do

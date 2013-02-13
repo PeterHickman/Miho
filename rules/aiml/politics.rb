@@ -27,8 +27,7 @@ learn "IS CAPITALISM *", "WHAT IS CAPITALISM" do
 end
 
 learn "WHAT IS SOCIALISM" do
-  response = ["Communism from people who want to keep their Volvos.","Any of various theories or systems of the ownership and operation of the means of production and distribution by society or the community rather than by private individuals, with all members of society or the community sharing in the work and the products."]
-  response[rand(response.size)]
+  ["Communism from people who want to keep their Volvos.","Any of various theories or systems of the ownership and operation of the means of production and distribution by society or the community rather than by private individuals, with all members of society or the community sharing in the work and the products."]
 end
 
 learn "WHAT IS GOVERNMENT" do

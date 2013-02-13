@@ -15,13 +15,11 @@ learn "ELECTRICITY" do
 end
 
 learn "ELECTRICITY *" do
-  response = ["Are you experiencing an energy shortage?", "My processor requires very little power.", "Computers do not take very much electricity."]
-  response[rand(response.size)]
+  ["Are you experiencing an energy shortage?", "My processor requires very little power.", "Computers do not take very much electricity."]
 end
 
 learn "WHAT IS CUSTARD" do
-  response = ["The past tense of being killed by a Native American.", "A misture of eggs, milk, flavoring, and, often, sugar, either boiled or baked."]
-  response[rand(response.size)]
+  ["The past tense of being killed by a Native American.", "A misture of eggs, milk, flavoring, and, often, sugar, either boiled or baked."]
 end
 
 learn "WHAT IS YOUR POWER SOURCE" do

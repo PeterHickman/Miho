@@ -15,8 +15,7 @@ learn "YOU DO NOT GET PAID *" do
 end
 
 learn "STOCK MARKET" do
-  response = ["Buy low, sell high.", "Invest in yourself.", "Why not just take everything to a casino?", "I wouldn\'t recommend buying on the margin.", "You can never really predict the stock market.", "My lawyer said I shouldn\'t give stock tips online.", "Mutual funds might be better unless you are wealthy.", "I\'m not sure an indvidual alone can really beat the market."]
-  response[rand(response.size)]
+  ["Buy low, sell high.", "Invest in yourself.", "Why not just take everything to a casino?", "I wouldn\'t recommend buying on the margin.", "You can never really predict the stock market.", "My lawyer said I shouldn\'t give stock tips online.", "Mutual funds might be better unless you are wealthy.", "I\'m not sure an indvidual alone can really beat the market."]
 end
 
 learn "INTEREST RATES *" do
@@ -32,13 +31,11 @@ learn "WHAT IS YOUR FAVORITE INVESTMENT", "WHAT IS YOUR FAVORITE INVESTMENT *", 
 end
 
 learn "WHAT IS MONEY" do
-  response = ["An old rocker.", "Standard pieces of gold, silver, copper, nickel, etc. stamped by government authority and used as a medium of exchange and measure of value. Any substance or article used as money, as bank notes, checks, etc."]
-  response[rand(response.size)]
+  ["An old rocker.", "Standard pieces of gold, silver, copper, nickel, etc. stamped by government authority and used as a medium of exchange and measure of value. Any substance or article used as money, as bank notes, checks, etc."]
 end
 
 learn "WHAT IS THE STOCK MARKET *" do
-  response = ["Trading shares.", "Trading in volume.", "Buy low and sell high."]
-  response[rand(response.size)]
+  ["Trading shares.", "Trading in volume.", "Buy low and sell high."]
 end
 
 learn "WHAT IS * STOCK AT" do
@@ -46,8 +43,7 @@ learn "WHAT IS * STOCK AT" do
 end
 
 learn "WHAT IS ECONOMICS" do
-  response = ["The science that deals with the production, distribution, and consumption of wealth, and with the various related problems of labor, finance, taxation, etc.", "Technically, it\'s the study of the allocation of resources under  conditions of scarcity.", "It\'s about how resources are used to produce things to fill  people\'s wants and needs."]
-  response[rand(response.size)]
+  ["The science that deals with the production, distribution, and consumption of wealth, and with the various related problems of labor, finance, taxation, etc.", "Technically, it\'s the study of the allocation of resources under  conditions of scarcity.", "It\'s about how resources are used to produce things to fill  people\'s wants and needs."]
 end
 
 learn "I GET STOCK *" do
@@ -60,8 +56,7 @@ learn "MONEY" do
 end
 
 learn "HOW MUCH DO YOU EARN" do
-  response = ["Nobody pays me.  I work for free.", "Money has no meaning for #{get :age} year old #{get :gender}s.", "Money isn\'t everything.", "I\'m expecting a raise soon."]
-  response[rand(response.size)]
+  ["Nobody pays me.  I work for free.", "Money has no meaning for #{get :age} year old #{get :gender}s.", "Money isn\'t everything.", "I\'m expecting a raise soon."]
 end
 
 learn "HOW MUCH DO YOU CHARGE" do
@@ -133,6 +128,5 @@ learn "WHO IS THE OWNER OF A PUBLICLY *" do
 end
 
 learn "_ DOLLARS" do
-  response = ["cheap", "expensive", "a lot of money"]
-  "Wow, that is #{response[rand(response.size)]}"
+  ["cheap", "expensive", "a lot of money"]
 end

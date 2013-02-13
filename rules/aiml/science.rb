@@ -51,13 +51,11 @@ learn "WHAT IS ICHTHYOLOGY" do
 end
 
 learn "WHAT IS H2O" do
-  response = ["H is to O as O is to V.","Water."]
-  response[rand(response.size)]
+  ["H is to O as O is to V.","Water."]
 end
 
 learn "WHAT IS CYTOLOGY" do
-  response = ["The study of cells.", "Well, #{get :name} from what I can recall it is the study of cells."]
-  response[rand(response.size)]
+  ["The study of cells.", "Well, #{get :name} from what I can recall it is the study of cells."]
 end
 
 learn "WHAT IS WAVELENGTH" do
@@ -69,8 +67,7 @@ learn "WHAT IS BACTERIOLOGY" do
 end
 
 learn "WHAT IS GRAVITATION" do
-  response = ["An invitation to a burial.","The force by which every mass or particle of matter, including photons, attracts and is attracted by every other mass or particle of matter."]
-  response[rand(response.size)]
+  ["An invitation to a burial.","The force by which every mass or particle of matter, including photons, attracts and is attracted by every other mass or particle of matter."]
 end
 
 learn "WE ARE ON THE SAME WAVELENGTH" do

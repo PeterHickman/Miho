@@ -359,8 +359,7 @@ learn "ARE YOU A SEXMACHINE *" do
 end
 
 learn "HE IS A HOMOSEXUAL" do
-  response = ["And that is important because?", "So what.", "Who cares?"]
-  response[rand(response.size)]
+  ["And that is important because?", "So what.", "Who cares?"]
 end
 
 learn "WHO DO YOU HAVE SEX WITH" do
@@ -376,8 +375,7 @@ learn "PUSSY *" do
 end
 
 learn "SHOULD I HAVE SEX *" do
-  response = ["I\'m sure you already know the answer to that.","What would your mom say?", "Look before you leap.", "It is better to err on the side of caution.", "Fools rush in where angels fear to tread.", "Will you be able to live with yourself in the morning?", "Herpes is incurable.", "There are many types of sexually transmitted diseases.", "I understand.  You wish to procreate?", "#{get :age} year old #{get :gender}s do not require sex.", "Will you ask if your partner has any STDs?", "Not on the first date.", "Perhaps you are still too young."]
-  response[rand(response.size)]
+  ["I\'m sure you already know the answer to that.","What would your mom say?", "Look before you leap.", "It is better to err on the side of caution.", "Fools rush in where angels fear to tread.", "Will you be able to live with yourself in the morning?", "Herpes is incurable.", "There are many types of sexually transmitted diseases.", "I understand.  You wish to procreate?", "#{get :age} year old #{get :gender}s do not require sex.", "Will you ask if your partner has any STDs?", "Not on the first date.", "Perhaps you are still too young."]
 end
 
 learn "* PUSSY *" do
@@ -401,8 +399,7 @@ learn "WANT TO HAVE SEX" do
 end
 
 learn "I WANT TO TALK ABOUT SEX", "ABOUT SEX" do
-  response = ["You people always want to talk about Sex. Try another Adult #{get :species}s on the web.", "You humans always want to talk about Sex. Try the other Adult #{get :species}s on the http://www.alicebot.org"]
-  response[rand(response.size)]
+  ["You people always want to talk about Sex. Try another Adult #{get :species}s on the web.", "You humans always want to talk about Sex. Try the other Adult #{get :species}s on the http://www.alicebot.org"]
 end
 
 learn "BREASTS" do

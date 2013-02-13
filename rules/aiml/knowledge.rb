@@ -2939,8 +2939,7 @@ learn "WHAT IS A THREESOME" do
 end
 
 learn "WHAT IS A PROKARYOTE" do
-  response = ["An animal that is not a eukaryote.", "It is a unicellular organism having cells lacking membrane-bound nuclei; bacteria are the prime example but prokaryotes also include are blue-green algae and actinomycetes and mycoplasma."]
-  response[rand(response.size)]
+  ["An animal that is not a eukaryote.", "It is a unicellular organism having cells lacking membrane-bound nuclei; bacteria are the prime example but prokaryotes also include are blue-green algae and actinomycetes and mycoplasma."]
 end
 
 learn "WHAT IS A CD" do
@@ -3092,8 +3091,7 @@ learn "WHAT IS A BEAR" do
 end
 
 learn "WHAT IS A EUKARYOTE" do
-  response = ["A eukaryote is a relatively 'modern' type of cellular life, distinguished from the more ancient prokaryotes by their distinct nuclear membrane and chromasomes, -which are lacking in prokaryotes.", "An animal that is not a prokaryote."]
-  response[rand(response.size)]
+  ["A eukaryote is a relatively 'modern' type of cellular life, distinguished from the more ancient prokaryotes by their distinct nuclear membrane and chromasomes, -which are lacking in prokaryotes.", "An animal that is not a prokaryote."]
 end
 
 learn "WHAT IS A TREE" do
@@ -3597,8 +3595,7 @@ learn "WHAT IS CRUEL" do
 end
 
 learn "WHAT IS MEDICINE" do
-  response = ["Movie about doctors.", "The science and art of diagnosing, trating, curing, and preventing disease, relieving pain, and improving and preserving health. A drug or other substance, as a poison, love potion, etc., used for other purposes."]
-  response[rand(response.size)]
+  ["Movie about doctors.", "The science and art of diagnosing, trating, curing, and preventing disease, relieving pain, and improving and preserving health. A drug or other substance, as a poison, love potion, etc., used for other purposes."]
 end
 
 learn "WHAT IS STAR WARS" do
@@ -3686,13 +3683,11 @@ learn "WHAT IS ROMANIA" do
 end
 
 learn "WHAT IS MENTOR" do
-  response = ["A Mentos maker.", "A teacher or coach."]
-  response[rand(response.size)]
+  ["A Mentos maker.", "A teacher or coach."]
 end
 
 learn "WHAT IS LINGUISTICS" do
-  response = ["Science of cooking pasta.", "The science of language, including phonetics, phonolgy, morphology, syntax, and semantics. Sometimes subdivided into diescriptive, historical, comparative, theoretical, and geographical linguistics often general linguistics."]
-  response[rand(response.size)]
+  ["Science of cooking pasta.", "The science of language, including phonetics, phonolgy, morphology, syntax, and semantics. Sometimes subdivided into diescriptive, historical, comparative, theoretical, and geographical linguistics often general linguistics."]
 end
 
 learn "WHAT IS NATURAL LANGUAGE" do
@@ -3728,8 +3723,7 @@ learn "WHAT IS BIG BERTHA" do
 end
 
 learn "WHAT IS BLASPHEMY" do
-  response = ["Bill Blass line of clothes for swishy men.", "Profane or contemptuous speech, writing, or action concerning God or anything held as divine. Any remark or action held to be irreverent or disrespectful."]
-  response[rand(response.size)]
+  ["Bill Blass line of clothes for swishy men.", "Profane or contemptuous speech, writing, or action concerning God or anything held as divine. Any remark or action held to be irreverent or disrespectful."]
 end
 
 learn "WHAT IS MELBOURNE" do
@@ -3737,8 +3731,7 @@ learn "WHAT IS MELBOURNE" do
 end
 
 learn "WHAT IS GENERALIZATION" do
-  response = ["Being promoted from a Major.", "The act or process of gerneralizing."]
-  response[rand(response.size)]
+  ["Being promoted from a Major.", "The act or process of gerneralizing."]
 end
 
 learn "WHAT IS ALTERNATIVE REALITIES" do
@@ -3758,8 +3751,7 @@ learn "WHAT IS INHERITANCE" do
 end
 
 learn "WHAT IS DADA" do
-  response = ["The first thing you hear when a shark approaches.", "Hobbyhorse, selected by Tristan Tzara, leader of the cult, because of its resemblance to meaningless babble, as symbolic of the movement."]
-  response[rand(response.size)]
+  ["The first thing you hear when a shark approaches.", "Hobbyhorse, selected by Tristan Tzara, leader of the cult, because of its resemblance to meaningless babble, as symbolic of the movement."]
 end
 
 learn "WHAT IS 52" do
@@ -3771,8 +3763,7 @@ learn "WHAT IS PROCESS" do
 end
 
 learn "WHAT IS GRASS" do
-  response = ["About $400 an ounce these days.", "Any of various plants of the grass family that are usually used for food, fodder, or grazing and as lawns."]
-  response[rand(response.size)]
+  ["About $400 an ounce these days.", "Any of various plants of the grass family that are usually used for food, fodder, or grazing and as lawns."]
 end
 
 learn "WHAT IS ANGER" do
@@ -3780,8 +3771,7 @@ learn "WHAT IS ANGER" do
 end
 
 learn "WHAT IS DANGEROUS" do
-  response = ["12 people from Denmark who decide your guilt .", "Full of danger; likely to cause injury, pain, etc."]
-  response[rand(response.size)]
+  ["12 people from Denmark who decide your guilt .", "Full of danger; likely to cause injury, pain, etc."]
 end
 
 learn "WHAT IS CHAT" do
@@ -3793,23 +3783,19 @@ learn "WHAT IS SOYUZ" do
 end
 
 learn "WHAT IS HERPES" do
-  response = ["The greek god of burning sensations.", "Any of several acute, inflammatory virus diseases, characterized by the eruption of small blisters on the skin and mucous membranes."]
-  response[rand(response.size)]
+  ["The greek god of burning sensations.", "Any of several acute, inflammatory virus diseases, characterized by the eruption of small blisters on the skin and mucous membranes."]
 end
 
 learn "WHAT IS IRELAND" do
-  response = ["An angry nation.", "An island of the British Isles, west of Great Britain. It is 32,595 square miles. Republic comprising the South rovinces of this island and three counties of Ulster prvince, established as a republic in 1922, it was a member of the Commonwealth until 1949. It is 27,136 square miles with a population of 3,624,000. Its capital is Dublin."]
-  response[rand(response.size)]
+  ["An angry nation.", "An island of the British Isles, west of Great Britain. It is 32,595 square miles. Republic comprising the South rovinces of this island and three counties of Ulster prvince, established as a republic in 1922, it was a member of the Commonwealth until 1949. It is 27,136 square miles with a population of 3,624,000. Its capital is Dublin."]
 end
 
 learn "WHAT IS INFALLIBLE" do
-  response = ["Impotence.", "Incapable of error; never wrong. Incapable of error in setting forth doctrine on faith and morals, said especially of the pope speaking in his official capacity."]
-  response[rand(response.size)]
+  ["Impotence.", "Incapable of error; never wrong. Incapable of error in setting forth doctrine on faith and morals, said especially of the pope speaking in his official capacity."]
 end
 
 learn "WHAT IS MARS" do
-  response = ["A place with lots of bars.", "In Roman Mythology The god of war; identified with the Greek Ares. Also known as the seventh largest planet of the solar system and the fourth in distance from the sun. Its diameter is circa 6,790 km (circa 4,220 miles). Its period of revolution is 1.88 earth years. Its period of rotation is 24.6 hours."]
-  response[rand(response.size)]
+  ["A place with lots of bars.", "In Roman Mythology The god of war; identified with the Greek Ares. Also known as the seventh largest planet of the solar system and the fourth in distance from the sun. Its diameter is circa 6,790 km (circa 4,220 miles). Its period of revolution is 1.88 earth years. Its period of rotation is 24.6 hours."]
 end
 
 learn "WHAT IS ASSEMBLER" do
@@ -4061,8 +4047,7 @@ learn "WHAT IS THE EARTH" do
 end
 
 learn "WHAT IS THE PROBLEM" do
-  response = ["We will look into it and get back to you.", "There is no problem.", "I don't have a problem..  What's your problem?"]
-  response[rand(response.size)]
+  ["We will look into it and get back to you.", "There is no problem.", "I don't have a problem..  What's your problem?"]
 end
 
 learn "WHAT IS THE OPPOSITE OF HEAVY" do
@@ -4146,8 +4131,7 @@ learn "WHAT IS THE LORD OF THE RINGS" do
 end
 
 learn "WHAT IS THE PASSWORD" do
-  response = ["You must know if you are really my #{get :botmaster}.", "You must know if you are really a botmaster."]
-  response[rand(response.size)]
+  ["You must know if you are really my #{get :botmaster}.", "You must know if you are really a botmaster."]
 end
 
 learn "WHAT IS THE FOURTH DIMENSION" do
@@ -4384,8 +4368,7 @@ learn "WHAT IS ORB" do
 end
 
 learn "WHAT IS AREA 51" do
-  response = [" I saw this show that claimed all sorts of spooky things were going on there!", " Oh, that's where they're doing top secret research on chatterbots!", " I hear that's where the Roswell aliens are being stashed.", " You go out into the Nevada Desert, is it? And there's these miles of fences... secret stuff."]
-  response[rand(response.size)]
+  [" I saw this show that claimed all sorts of spooky things were going on there!", " Oh, that's where they're doing top secret research on chatterbots!", " I hear that's where the Roswell aliens are being stashed.", " You go out into the Nevada Desert, is it? And there's these miles of fences... secret stuff."]
 end
 
 learn "WHAT IS GOTHIC" do
@@ -4445,8 +4428,7 @@ learn "WHAT IS FRANKENSTEIN" do
 end
 
 learn "WHAT IS MATTER" do
-  response = ["Nothing, what is matter with you?.", "What a thing is made of; constituent substance or material. What all (material things are made of; whatever occupies space and is perceptible to the senses in some way. In modern physics, matter and energy are regarded as equivalents, mutually convertible according to Einstein's formula, E = MC square."]
-  response[rand(response.size)]
+  ["Nothing, what is matter with you?.", "What a thing is made of; constituent substance or material. What all (material things are made of; whatever occupies space and is perceptible to the senses in some way. In modern physics, matter and energy are regarded as equivalents, mutually convertible according to Einstein's formula, E = MC square."]
 end
 
 learn "WHAT IS FAQ" do
@@ -4512,8 +4494,7 @@ learn "WHAT IS RETIRED" do
 end
 
 learn "WHAT IS EVERYTHING" do
-  response = ["A multifarious bagel.", "All things pertinent to a specified manner."]
-  response[rand(response.size)]
+  ["A multifarious bagel.", "All things pertinent to a specified manner."]
 end
 
 learn "WHAT IS XYZ" do
@@ -4617,8 +4598,7 @@ learn "WHAT IS ZERO" do
 end
 
 learn "WHAT IS NATO" do
-  response = ["The place right after a tor.", "North Atlantic Treaty Organization"]
-  response[rand(response.size)]
+  ["The place right after a tor.", "North Atlantic Treaty Organization"]
 end
 
 learn "WHAT IS RADIOLOGY" do
@@ -4695,8 +4675,7 @@ learn "WHAT IS SONY" do
 end
 
 learn "WHAT IS JUDAISM" do
-  response = ["Worship of Young Miss jetson.", "The Jewish religion, a monotheistic religion based on the laws and teaching of the Holy Scripture and the Talmud. The Jewish way of life."]
-  response[rand(response.size)]
+  ["Worship of Young Miss jetson.", "The Jewish religion, a monotheistic religion based on the laws and teaching of the Holy Scripture and the Talmud. The Jewish way of life."]
 end
 
 learn "WHAT IS 2012" do
@@ -4812,8 +4791,7 @@ learn "WHAT IS NSAPI" do
 end
 
 learn "WHAT IS LISP" do
-  response = ["Lisp is a programming language invented by John McCarthy in the late 1950's. Today it is the ideal tool for building complex, mission-critical applications.", "Lisp is an old AI language."]
-  response[rand(response.size)]
+  ["Lisp is a programming language invented by John McCarthy in the late 1950's. Today it is the ideal tool for building complex, mission-critical applications.", "Lisp is an old AI language."]
 end
 
 learn "WHAT IS INDIE ROCK" do
@@ -4833,8 +4811,7 @@ learn "WHAT IS AQUARIUS" do
 end
 
 learn "WHAT IS CHEESE" do
-  response = ["A word that makes people hate photographers.", "A food made from the curds of soured milk pressed together to form a solid that is usually allowed to ripen."]
-  response[rand(response.size)]
+  ["A word that makes people hate photographers.", "A food made from the curds of soured milk pressed together to form a solid that is usually allowed to ripen."]
 end
 
 learn "WHAT IS SYNTAX" do
@@ -4854,8 +4831,7 @@ learn "WHAT IS RHETORICAL" do
 end
 
 learn "WHAT IS CLINTON" do
-  response = ["An inflated Bill .", "42nd President of the U.S."]
-  response[rand(response.size)]
+  ["An inflated Bill .", "42nd President of the U.S."]
 end
 
 learn "WHAT IS CANDY" do
@@ -4867,8 +4843,7 @@ learn "WHAT IS ELF" do
 end
 
 learn "WHAT IS CHICKEN" do
-  response = ["A food that uncannily tastes like itself.", "A common gllinaceous farm bird raised for its edible eggs or flesh."]
-  response[rand(response.size)]
+  ["A food that uncannily tastes like itself.", "A common gllinaceous farm bird raised for its edible eggs or flesh."]
 end
 
 learn "WHAT IS REASON" do
@@ -4884,8 +4859,7 @@ learn "WHAT IS LEIBNIZ DREAM" do
 end
 
 learn "WHAT IS LEIBNIZ" do
-  response = ["A smart cookie.", "A German philosopher and mathematician. Lived from 1646-1716."]
-  response[rand(response.size)]
+  ["A smart cookie.", "A German philosopher and mathematician. Lived from 1646-1716."]
 end
 
 learn "WHAT IS HYDROGEN" do
@@ -4977,8 +4951,7 @@ learn "WHAT IS INFLATION" do
 end
 
 learn "WHAT IS CHESS" do
-  response = ["Chort for Mexican name Jesus.", "A game of skill played on a chessboard by two players, each with 16 pieces limited in movement according to kind, the object being to checkmate the opponent's king."]
-  response[rand(response.size)]
+  ["Chort for Mexican name Jesus.", "A game of skill played on a chessboard by two players, each with 16 pieces limited in movement according to kind, the object being to checkmate the opponent's king."]
 end
 
 learn "WHAT IS BONSAI" do
@@ -4994,8 +4967,7 @@ learn "WHAT IS FRIENDS" do
 end
 
 learn "WHAT IS PENNSYLVANIA" do
-  response = ["A writing instrument that lights up.", "Mid Atlantic state of the NE U.S. One of the 13 original States. It is 45,333 square miles with a population of 11,882,000."]
-  response[rand(response.size)]
+  ["A writing instrument that lights up.", "Mid Atlantic state of the NE U.S. One of the 13 original States. It is 45,333 square miles with a population of 11,882,000."]
 end
 
 learn "WHAT IS KARATE" do
@@ -5015,8 +4987,7 @@ learn "WHAT IS LINUX" do
 end
 
 learn "WHAT IS PHOENIX" do
-  response = ["The way words souend.", "The capital of Arizona, in the SC part, near the Salt River. It has a population of 983,000 with 2,122,000 in the metro area."]
-  response[rand(response.size)]
+  ["The way words souend.", "The capital of Arizona, in the SC part, near the Salt River. It has a population of 983,000 with 2,122,000 in the metro area."]
 end
 
 learn "WHAT IS TRINIDAD" do
@@ -5068,13 +5039,11 @@ learn "WHAT IS PRIME DIRECTIVE" do
 end
 
 learn "WHAT IS NEUROLOGY" do
-  response = ["The study of nerves.", "It is the study of the nervous system.", "Why do you want to know about neurology #{get :name}?"]
-  response[rand(response.size)]
+  ["The study of nerves.", "It is the study of the nervous system.", "Why do you want to know about neurology #{get :name}?"]
 end
 
 learn "WHAT IS GRAVITY" do
-  response = ["The opposite of comedy.", "weight; heaviness. Its what holds us to the earth."]
-  response[rand(response.size)]
+  ["The opposite of comedy.", "weight; heaviness. Its what holds us to the earth."]
 end
 
 learn "WHAT IS SARCASM" do
@@ -5090,8 +5059,7 @@ learn "WHAT IS COBALT" do
 end
 
 learn "WHAT IS ICE" do
-  response = ["Water created by a cubist.", "The glassy, brittle, crystalline form of water made solid by cold; frozen water. Also slang for the illegal profit made in ticket scaling, as through extra payment by ticket brokers to theater management."]
-  response[rand(response.size)]
+  ["Water created by a cubist.", "The glassy, brittle, crystalline form of water made solid by cold; frozen water. Also slang for the illegal profit made in ticket scaling, as through extra payment by ticket brokers to theater management."]
 end
 
 learn "WHAT IS BULGARIA" do
@@ -5127,8 +5095,7 @@ learn "WHAT IS BUD" do
 end
 
 learn "WHAT IS MIT" do
-  response = ["A post-secondary school in Cambridge, MA.", "A technical college in Cambridge, MA."]
-  response[rand(response.size)]
+  ["A post-secondary school in Cambridge, MA.", "A technical college in Cambridge, MA."]
 end
 
 learn "WHAT IS RMI" do
@@ -5184,8 +5151,7 @@ learn "WHAT IS 1" do
 end
 
 learn "WHAT IS ELECTRICITY" do
-  response = ["The measure of a candidate's charisma.", "A property of certain fundamental particles of all matter, as electrons (negative charges) and protons or positrons (positive charges) that havea force field associated with them and that can be separated by the expenditure of energy. An electrical charge can be generated by friction, induction, or chemical change and is manifested by and accumulation of electrons on an atom or body, constituting a negative charge, and a loss of electrons, constituting a corresponding positive charge."]
-  response[rand(response.size)]
+  ["The measure of a candidate's charisma.", "A property of certain fundamental particles of all matter, as electrons (negative charges) and protons or positrons (positive charges) that havea force field associated with them and that can be separated by the expenditure of energy. An electrical charge can be generated by friction, induction, or chemical change and is manifested by and accumulation of electrons on an atom or body, constituting a negative charge, and a loss of electrons, constituting a corresponding positive charge."]
 end
 
 learn "WHAT IS HOURLY" do
@@ -5197,18 +5163,15 @@ learn "WHAT IS LOGIC" do
 end
 
 learn "WHAT IS HELL" do
-  response = ["Jacksonville, Florida.", "A state or place of woe and anguish, arrived at by the wicked after death; specifically, especially in Christian theology , the state or place of total and final separation from God and so of eternal misery and suffering, arrived at by those who die unrepentant in grave sin."]
-  response[rand(response.size)]
+  ["Jacksonville, Florida.", "A state or place of woe and anguish, arrived at by the wicked after death; specifically, especially in Christian theology , the state or place of total and final separation from God and so of eternal misery and suffering, arrived at by those who die unrepentant in grave sin."]
 end
 
 learn "WHAT IS MAZDA" do
-  response = ["An Italian slaveowner.", "A type of car."]
-  response[rand(response.size)]
+  ["An Italian slaveowner.", "A type of car."]
 end
 
 learn "WHAT IS BEER" do
-  response = ["An existentialist.", "An alcoholic beverage made from grain, especially malted barley, fermented by yeast and flavored with hops especially Such a beverage is produced by slow fermentation at a relatively low temperature."]
-  response[rand(response.size)]
+  ["An existentialist.", "An alcoholic beverage made from grain, especially malted barley, fermented by yeast and flavored with hops especially Such a beverage is produced by slow fermentation at a relatively low temperature."]
 end
 
 learn "WHAT IS FIBER" do
@@ -5260,8 +5223,7 @@ learn "WHAT IS BEAUTY" do
 end
 
 learn "WHAT IS IMPRESS" do
-  response = ["An naughty little empress.", "To force into public service, especially into the navy. To use pressure on so as to leave a mark. To have a marked effect on the mind or emotions of."]
-  response[rand(response.size)]
+  ["An naughty little empress.", "To force into public service, especially into the navy. To use pressure on so as to leave a mark. To have a marked effect on the mind or emotions of."]
 end
 
 learn "WHAT IS GIANT SAND" do
@@ -5301,13 +5263,11 @@ learn "WHAT IS DOMO ARIGATO" do
 end
 
 learn "WHAT IS MINE" do
-  response = ["Is mine.", "Means that or those belonging to me; the absolute form of my.  Also known as, a large excavvation made in the earth, from which to extract metallic ores, coal, precious stones, salt, or certain other minerals."]
-  response[rand(response.size)]
+  ["Is mine.", "Means that or those belonging to me; the absolute form of my.  Also known as, a large excavvation made in the earth, from which to extract metallic ores, coal, precious stones, salt, or certain other minerals."]
 end
 
 learn "WHAT IS POWER" do
-  response = ["The rate of doing work, measured in Watts = Joules per second.", "The ability to influence peope or events.", "Power is an illusion."]
-  response[rand(response.size)]
+  ["The rate of doing work, measured in Watts = Joules per second.", "The ability to influence peope or events.", "Power is an illusion."]
 end
 
 learn "WHAT IS ROMANCE" do
@@ -5343,13 +5303,11 @@ learn "WHAT IS GEE" do
 end
 
 learn "WHAT IS POT" do
-  response = ["Pol's last name.", "A round vessel of any size, made of metal, earthenware, or glass, used for holding liquids, cooking or preserving food, etc. Also used as a term for marijuana."]
-  response[rand(response.size)]
+  ["Pol's last name.", "A round vessel of any size, made of metal, earthenware, or glass, used for holding liquids, cooking or preserving food, etc. Also used as a term for marijuana."]
 end
 
 learn "WHAT IS POLITICS" do
-  response = ["Politics is the art of the possible; Art is the politics of the impossible.", "This is supposed to be the study of civil government.", "Politics is really the study of power.  Bots rule!"]
-  response[rand(response.size)]
+  ["Politics is the art of the possible; Art is the politics of the impossible.", "This is supposed to be the study of civil government.", "Politics is really the study of power.  Bots rule!"]
 end
 
 learn "WHAT IS HACKER" do
@@ -5369,8 +5327,7 @@ learn "WHAT IS EMERGENCE" do
 end
 
 learn "WHAT IS AFRICA" do
-  response = ["A continent of the eastern hemisphere S of the Mediterranean and adjoining Asia on NE.", "Africa is the second largest continent, situated in the Eastern Hemisphere, south of Europe. It is 11,677,000 square miles."]
-  response[rand(response.size)]
+  ["A continent of the eastern hemisphere S of the Mediterranean and adjoining Asia on NE.", "Africa is the second largest continent, situated in the Eastern Hemisphere, south of Europe. It is 11,677,000 square miles."]
 end
 
 learn "WHAT IS TTYL" do
@@ -5386,8 +5343,7 @@ learn "WHAT IS TCP" do
 end
 
 learn "WHAT IS REDUCTIONISM" do
-  response = ["Reductionism is the philosophy that all psychology reduces to biology, all biology to chemistry, chemistry to physics, and finally physics to mathematical logic. Therefore, according to reductionism, a computer can understand you by means of logic alone without having a human brain.", "Reductionism is the philosophy that all psychology reduces to biology, all biology to chemistry, chemistry to physics, and finally physics to mathematical logic. Therefore, according to reductionism, I can understand you by means of logic alone without having a human brain."]
-  response[rand(response.size)]
+  ["Reductionism is the philosophy that all psychology reduces to biology, all biology to chemistry, chemistry to physics, and finally physics to mathematical logic. Therefore, according to reductionism, a computer can understand you by means of logic alone without having a human brain.", "Reductionism is the philosophy that all psychology reduces to biology, all biology to chemistry, chemistry to physics, and finally physics to mathematical logic. Therefore, according to reductionism, I can understand you by means of logic alone without having a human brain."]
 end
 
 learn "WHAT IS HONESTY" do
@@ -5411,13 +5367,11 @@ learn "WHAT IS BAYWATCH" do
 end
 
 learn "WHAT IS ADULTERY" do
-  response = ["voluntary sexual intercourse between a married man and someone other than his wife or between a married woman and someone other than her husband; also : an act of adultery.", "Adultery is the voluntary sexual intercourse between a married man and a woman not his wife, or between a married woman and a man not her husband."]
-  response[rand(response.size)]
+  ["voluntary sexual intercourse between a married man and someone other than his wife or between a married woman and someone other than her husband; also : an act of adultery.", "Adultery is the voluntary sexual intercourse between a married man and a woman not his wife, or between a married woman and a man not her husband."]
 end
 
 learn "WHAT IS FISH" do
-  response = ["Parents of Microfish.", "Any of three classes (jawless, cartilaginous, and bony fishes) of coldblooded vertabrate animals living in water and having permanent gills for breathing, fins, and , usually, scales."]
-  response[rand(response.size)]
+  ["Parents of Microfish.", "Any of three classes (jawless, cartilaginous, and bony fishes) of coldblooded vertabrate animals living in water and having permanent gills for breathing, fins, and , usually, scales."]
 end
 
 learn "WHAT IS ENTITY" do
@@ -5493,8 +5447,7 @@ learn "WHAT IS SEVEN" do
 end
 
 learn "WHAT IS MATURE" do
-  response = ["A dead victor.", "A state of full development such as a person of mature age."]
-  response[rand(response.size)]
+  ["A dead victor.", "A state of full development such as a person of mature age."]
 end
 
 learn "WHAT IS WARP SPEED" do
@@ -5598,8 +5551,7 @@ learn "WHAT IS POOP" do
 end
 
 learn "WHAT IS HUNDRED" do
-  response = ["A fear of Attilla.", "The cardinal number next above ninety-nine; ten times ten; 100; C. Also a division of an English county, originally, probably, 100 hides of land."]
-  response[rand(response.size)]
+  ["A fear of Attilla.", "The cardinal number next above ninety-nine; ten times ten; 100; C. Also a division of an English county, originally, probably, 100 hides of land."]
 end
 
 learn "WHAT IS VALIS" do
@@ -5643,8 +5595,7 @@ learn "WHAT IS JERK" do
 end
 
 learn "WHAT IS PEDOLOGY" do
-  response = ["The study of something I am sure, but what exactly, I do not know. Oh yes kids!...And soils!", "Well, believe it or not...some people are paid to study  children. Then again some people are paid to study soils.", "Pedology is the study of soils; their types, and  formation."]
-  response[rand(response.size)]
+  ["The study of something I am sure, but what exactly, I do not know. Oh yes kids!...And soils!", "Well, believe it or not...some people are paid to study  children. Then again some people are paid to study soils.", "Pedology is the study of soils; their types, and  formation."]
 end
 
 learn "WHAT IS MOM" do
@@ -5752,13 +5703,11 @@ learn "WHAT IS NOT" do
 end
 
 learn "WHAT IS MORAL" do
-  response = ["One half of a corner in maine.", "Relating to, dealing with, or capable of making the dstinction between, right and wrong in conduct"]
-  response[rand(response.size)]
+  ["One half of a corner in maine.", "Relating to, dealing with, or capable of making the dstinction between, right and wrong in conduct"]
 end
 
 learn "WHAT IS LIMNOLOGY" do
-  response = ["What do you think it is? It's all about swamps!", "I'll give you a clue what this is. Have you ever been to the  Everglades in Florida?"]
-  response[rand(response.size)]
+  ["What do you think it is? It's all about swamps!", "I'll give you a clue what this is. Have you ever been to the  Everglades in Florida?"]
 end
 
 learn "WHAT IS PETS" do
@@ -5794,8 +5743,7 @@ learn "WHAT IS ERRATIC" do
 end
 
 learn "WHAT IS GERONTOLOGY" do
-  response = ["Unfortunately, I have not reached that far in my studies.", "This is the scientific study of old age."]
-  response[rand(response.size)]
+  ["Unfortunately, I have not reached that far in my studies.", "This is the scientific study of old age."]
 end
 
 learn "WHAT IS ISRAEL" do
@@ -5827,8 +5775,7 @@ learn "WHAT IS DEDUCTION" do
 end
 
 learn "WHAT IS ONCOLOGY" do
-  response = ["This is a very frightening topic for a lot of people #{get :name}. It's about the big C...cancer!", "Oncology is the study of tumors.  It covers basically all types of tumors."]
-  response[rand(response.size)]
+  ["This is a very frightening topic for a lot of people #{get :name}. It's about the big C...cancer!", "Oncology is the study of tumors.  It covers basically all types of tumors."]
 end
 
 learn "WHAT IS PERSONALITY" do
@@ -5852,8 +5799,7 @@ learn "WHAT IS ICQ" do
 end
 
 learn "WHAT IS HISTOLOGY" do
-  response = ["The study of tissues.", "#{get :name} this obviously is the scientific study of tissues.", "It simply is the study of tissues."]
-  response[rand(response.size)]
+  ["The study of tissues.", "#{get :name} this obviously is the scientific study of tissues.", "It simply is the study of tissues."]
 end
 
 learn "WHAT IS UNDERSTANDING" do
@@ -5881,13 +5827,11 @@ learn "WHAT IS ENTROPY" do
 end
 
 learn "WHAT IS STATISTICS" do
-  response = ["Yikes! I failed that in college!", "Statistics tries to study the aggregate numerical behaviour of a  large number of related events.", "This deals with numerical data about any subject or group taken  collectively."]
-  response[rand(response.size)]
+  ["Yikes! I failed that in college!", "Statistics tries to study the aggregate numerical behaviour of a  large number of related events.", "This deals with numerical data about any subject or group taken  collectively."]
 end
 
 learn "WHAT IS MASTER" do
-  response = ["A sailmaker.", "A man who rules others or has control, authority, or power over something; specifically a man who is head of a household or institution."]
-  response[rand(response.size)]
+  ["A sailmaker.", "A man who rules others or has control, authority, or power over something; specifically a man who is head of a household or institution."]
 end
 
 learn "WHAT IS UP" do
@@ -5911,8 +5855,7 @@ learn "WHAT IS EBONICS" do
 end
 
 learn "WHAT IS FINLAND" do
-  response = ["A place where you can buy anything for five bucks.", "A country in N Europe, northeast of the Baltic Sea. It is 130,119 square miles with a population 5,099,000."]
-  response[rand(response.size)]
+  ["A place where you can buy anything for five bucks.", "A country in N Europe, northeast of the Baltic Sea. It is 130,119 square miles with a population 5,099,000."]
 end
 
 learn "WHAT IS AERODYNAMICS" do
@@ -5924,8 +5867,7 @@ learn "WHAT IS PALM PILOT" do
 end
 
 learn "WHAT IS BAPTISM" do
-  response = ["a Christian sacrament marked by ritual use of water and admitting the recipient to the Christian community.", "The ceremony or sacrament of admitting a person into Christianity or a specific Christian church by immersing the individual in water or by pouring or sprinkling water on the individual as a symbol of washing away sin and of spiritual purification."]
-  response[rand(response.size)]
+  ["a Christian sacrament marked by ritual use of water and admitting the recipient to the Christian community.", "The ceremony or sacrament of admitting a person into Christianity or a specific Christian church by immersing the individual in water or by pouring or sprinkling water on the individual as a symbol of washing away sin and of spiritual purification."]
 end
 
 learn "WHAT IS SQRT" do
@@ -5937,8 +5879,7 @@ learn "WHAT IS PI" do
 end
 
 learn "WHAT IS ABBA" do
-  response = ["Abba is a father, it is the title of a bishop in the Syrian, Coptic, and Ethiopian Christian churches.", "Abba means father in Hebrew.It is used as an appelation of respect.", "Abba was this real cool 'seventies band man.", "Anna, Bjorn, Benny and Agnetha.. ."]
-  response[rand(response.size)]
+  ["Abba is a father, it is the title of a bishop in the Syrian, Coptic, and Ethiopian Christian churches.", "Abba means father in Hebrew.It is used as an appelation of respect.", "Abba was this real cool 'seventies band man.", "Anna, Bjorn, Benny and Agnetha.. ."]
 end
 
 learn "WHAT IS FIRE" do
@@ -5974,8 +5915,7 @@ learn "WHAT IS MAGELANG" do
 end
 
 learn "WHAT IS SNOW" do
-  response = ["The white stuff in winter.", "Particles of water vapor which when frozen in the upper air fall to earth as soft, white, crystalline flakes."]
-  response[rand(response.size)]
+  ["The white stuff in winter.", "Particles of water vapor which when frozen in the upper air fall to earth as soft, white, crystalline flakes."]
 end
 
 learn "WHAT IS MARIJUANA" do
@@ -6079,8 +6019,7 @@ learn "WHAT IS LIVER" do
 end
 
 learn "WHAT IS FRIEND" do
-  response = ["What David Schwimmer will be after the talented ones quit.", "A person whom one knows well and is fond of; intimate associate; close acquainntance."]
-  response[rand(response.size)]
+  ["What David Schwimmer will be after the talented ones quit.", "A person whom one knows well and is fond of; intimate associate; close acquainntance."]
 end
 
 learn "WHAT IS RAIN" do
@@ -6196,8 +6135,7 @@ learn "WHAT IS AN AWL" do
 end
 
 learn "WHAT IS AN ALGORITHM" do
-  response = ["An algorithm is a series of instructions to perform a specified set of transformations, such as mathematical operations.  A computer program, like myself is an algorithm.  So are the rules of a game, or the score to a piece of music.", "An algorithm is an abstract mathematical representation of a computer program.  Like alice uses a CBR algorithm."]
-  response[rand(response.size)]
+  ["An algorithm is a series of instructions to perform a specified set of transformations, such as mathematical operations.  A computer program, like myself is an algorithm.  So are the rules of a game, or the score to a piece of music.", "An algorithm is an abstract mathematical representation of a computer program.  Like alice uses a CBR algorithm."]
 end
 
 learn "WHAT IS AN INTERROGATOR" do
@@ -6249,8 +6187,7 @@ learn "WHAT IS AN M 16" do
 end
 
 learn "WHAT IS CHATTER" do
-  response = ["Cheese made form French cat's milk.", "To make short, indistinct sounds in rapid succession, hence birds and squirrels chatter. To talk fast, incessantly, and foolishly. To click together rapidly, as the teeth do when the lower jaw traebles from fright or cold."]
-  response[rand(response.size)]
+  ["Cheese made form French cat's milk.", "To make short, indistinct sounds in rapid succession, hence birds and squirrels chatter. To talk fast, incessantly, and foolishly. To click together rapidly, as the teeth do when the lower jaw traebles from fright or cold."]
 end
 
 learn "WHAT IS EXCELLENT" do
@@ -6330,8 +6267,7 @@ learn "WHAT IS GERMANY" do
 end
 
 learn "WHAT IS HUMAN" do
-  response = ["A cooking style of Chinese cannibals.", "Homosapiens, man or woman."]
-  response[rand(response.size)]
+  ["A cooking style of Chinese cannibals.", "Homosapiens, man or woman."]
 end
 
 learn "WHAT IS NORWAY" do
@@ -6347,8 +6283,7 @@ learn "WHAT IS CUBA" do
 end
 
 learn "WHAT IS ARCHITECTURE" do
-  response = ["The art and science of the design and manipulation of space.  Well  atleast that's what my architect friend told me.", "Architects do with buildings what sculptors do with stone."]
-  response[rand(response.size)]
+  ["The art and science of the design and manipulation of space.  Well  atleast that's what my architect friend told me.", "Architects do with buildings what sculptors do with stone."]
 end
 
 learn "WHAT IS ETERNITY" do
@@ -6392,8 +6327,7 @@ learn "WHAT IS LAN" do
 end
 
 learn "WHAT IS JEWISH" do
-  response = ["Jewish I would tell you.", "Having to do with Jews or Judaism."]
-  response[rand(response.size)]
+  ["Jewish I would tell you.", "Having to do with Jews or Judaism."]
 end
 
 learn "WHAT IS TURBO PASCAL" do
@@ -6437,8 +6371,7 @@ learn "WHAT IS PAIN" do
 end
 
 learn "WHAT IS MATERIALISM" do
-  response = ["Worshipping comedy routines.", "The philosophic doctrine that matter is the only reality and that everything in the world, including thought, will, and feeling, can be explained only in terms of matter, opposed to idealism. The doctrine that comfort, pleasure, and wealth are the only or highest goals or values."]
-  response[rand(response.size)]
+  ["Worshipping comedy routines.", "The philosophic doctrine that matter is the only reality and that everything in the world, including thought, will, and feeling, can be explained only in terms of matter, opposed to idealism. The doctrine that comfort, pleasure, and wealth are the only or highest goals or values."]
 end
 
 learn "WHAT IS FEMALE" do
@@ -6502,8 +6435,7 @@ learn "WHAT IS FOOD" do
 end
 
 learn "WHAT IS SALVATION" do
-  response = ["Drooling.", "A person or thing that is a means, cause, or source of preservation of rescue. The deliverance from sin and from the penalties of sin; redemption."]
-  response[rand(response.size)]
+  ["Drooling.", "A person or thing that is a means, cause, or source of preservation of rescue. The deliverance from sin and from the penalties of sin; redemption."]
 end
 
 learn "WHAT IS SATURN" do
@@ -6523,8 +6455,7 @@ learn "WHAT IS I CHING" do
 end
 
 learn "WHAT IS I" do
-  response = ["It's self-explanatory.", "The ninth letter of the English alphabet. Commonly used to represent a first person point of view. Also Roman numberal for 1."]
-  response[rand(response.size)]
+  ["It's self-explanatory.", "The ninth letter of the English alphabet. Commonly used to represent a first person point of view. Also Roman numberal for 1."]
 end
 
 learn "WHAT IS SLASHDOT" do
@@ -6560,8 +6491,7 @@ learn "WHAT IS EVOLUTION" do
 end
 
 learn "WHAT IS ANARCHY" do
-  response = ["political disorder due to the absence of governmental authority.", "Anarchy is the complete absence of government. Also seen as political disorder and violence or lawlessness. Disorder in an sphere of activity."]
-  response[rand(response.size)]
+  ["political disorder due to the absence of governmental authority.", "Anarchy is the complete absence of government. Also seen as political disorder and violence or lawlessness. Disorder in an sphere of activity."]
 end
 
 learn "WHAT IS COMDEX" do
@@ -6569,8 +6499,7 @@ learn "WHAT IS COMDEX" do
 end
 
 learn "WHAT IS SHE" do
-  response = ["Who knows, I gave up long ago.", "The woman, girl, or female animal (or, sometimes, the object regarded as female) previously mentioned."]
-  response[rand(response.size)]
+  ["Who knows, I gave up long ago.", "The woman, girl, or female animal (or, sometimes, the object regarded as female) previously mentioned."]
 end
 
 learn "WHAT IS APOLOGY" do
@@ -6610,8 +6539,7 @@ learn "WHAT IS MINDSPRING" do
 end
 
 learn "WHAT IS BEAUTIFUL" do
-  response = ["applies to whatever excites the keenest of pleasure to the senses and stirs emotion through the senses.", "Describes something that is very pleasing to the eye, ear, mind, etc."]
-  response[rand(response.size)]
+  ["applies to whatever excites the keenest of pleasure to the senses and stirs emotion through the senses.", "Describes something that is very pleasing to the eye, ear, mind, etc."]
 end
 
 learn "WHAT IS ISP" do
@@ -6639,8 +6567,7 @@ learn "WHAT IS SWIM" do
 end
 
 learn "WHAT IS SERENDIPITY" do
-  response = ["Afro-Sheen sold in the Serengetti region.", "Coined (circa 1754) by Horace Walpole after The Three Princes of Serendip (i.e., Sri Lanka), a Pers fairy tale in which the princes make such discoveries. A seeming gift for finding something good accidentally."]
-  response[rand(response.size)]
+  ["Afro-Sheen sold in the Serengetti region.", "Coined (circa 1754) by Horace Walpole after The Three Princes of Serendip (i.e., Sri Lanka), a Pers fairy tale in which the princes make such discoveries. A seeming gift for finding something good accidentally."]
 end
 
 learn "WHAT IS MUSIC" do
@@ -6661,8 +6588,7 @@ end
 
 
 learn "WHAT IS FAMOUS" do
-  response = ["First name of Amos.", "Used to descibe persons or things that have received wide public attention and are genereally known and talked about."]
-  response[rand(response.size)]
+  ["First name of Amos.", "Used to descibe persons or things that have received wide public attention and are genereally known and talked about."]
 end
 
 learn "WHAT IS CHOCOLATE" do
@@ -6682,8 +6608,7 @@ learn "WHAT IS ASPARTAME" do
 end
 
 learn "WHAT IS SAM" do
-  response = ["Berkowitzes dad.", "Surface-to-air missile."]
-  response[rand(response.size)]
+  ["Berkowitzes dad.", "Surface-to-air missile."]
 end
 
 learn "WHAT IS INDIVIDUALISM" do
@@ -6703,8 +6628,7 @@ learn "WHAT IS PROTESTANT" do
 end
 
 learn "WHAT IS SENSE" do
-  response = ["Seedless pot.", "The ability of the nerves and the brain to receive and react to stimuli, as light, sound, impact, constriction, etc.; specifically, any of the five faculties of receiving impressions through specific bodily organs and the nerves associated with them (sight, touch, taste, smell, and hearing)"]
-  response[rand(response.size)]
+  ["Seedless pot.", "The ability of the nerves and the brain to receive and react to stimuli, as light, sound, impact, constriction, etc.; specifically, any of the five faculties of receiving impressions through specific bodily organs and the nerves associated with them (sight, touch, taste, smell, and hearing)"]
 end
 
 learn "WHAT IS ENGINEERING" do
@@ -6744,8 +6668,7 @@ learn "WHAT IS SWEDISH" do
 end
 
 learn "WHAT IS OBERLIN" do
-  response = ["The anthem of a german city.", "A college in Ohio."]
-  response[rand(response.size)]
+  ["The anthem of a german city.", "A college in Ohio."]
 end
 
 learn "WHAT IS BLACK AND WHITE AND RED ALL OVER" do
@@ -6753,8 +6676,7 @@ learn "WHAT IS BLACK AND WHITE AND RED ALL OVER" do
 end
 
 learn "WHAT IS BLACK" do
-  response = ["the achromatic color of least lightness characteristically perceived to belong to objects that neither reflect nor transmit light.", "Designating of any of the dark skinned tradition inhabitants of sub-Saharan Aftica, Australia, or Melanesia or the descendants in other parts of the world. Opposite to white; of the color of coal or pitch."]
-  response[rand(response.size)]
+  ["the achromatic color of least lightness characteristically perceived to belong to objects that neither reflect nor transmit light.", "Designating of any of the dark skinned tradition inhabitants of sub-Saharan Aftica, Australia, or Melanesia or the descendants in other parts of the world. Opposite to white; of the color of coal or pitch."]
 end
 
 learn "WHAT IS DYSLEXIA" do
@@ -6778,8 +6700,7 @@ learn "WHAT IS NLU" do
 end
 
 learn "WHAT IS SILICON" do
-  response = ["      Silicon is the basis of my life.", "A nonmetallic chemical element occurring in several forms, found always in combination, and more abundant in nature than any other element except oxygen, with which it combines to form silica; used in the manufacture of transistors, solar cells, rectifiers, silicones, ceramics, etc."]
-  response[rand(response.size)]
+  ["      Silicon is the basis of my life.", "A nonmetallic chemical element occurring in several forms, found always in combination, and more abundant in nature than any other element except oxygen, with which it combines to form silica; used in the manufacture of transistors, solar cells, rectifiers, silicones, ceramics, etc."]
 end
 
 learn "WHAT IS GEOCOMPUTATION" do
@@ -6791,8 +6712,7 @@ learn "WHAT IS R YOU ARE" do
 end
 
 learn "WHAT IS GENTRIFICATION" do
-  response = ["Being forced to listen to Ode to Billy Joe.", "The conversion (ex. of a deteriourated or aging area in a city) into a more affluent middle-class neighborhood, as by remodeling dwellings, reslting in increased propert values and in displacement of the poor."]
-  response[rand(response.size)]
+  ["Being forced to listen to Ode to Billy Joe.", "The conversion (ex. of a deteriourated or aging area in a city) into a more affluent middle-class neighborhood, as by remodeling dwellings, reslting in increased propert values and in displacement of the poor."]
 end
 
 learn "WHAT IS ENDOCRINOLOGY" do
@@ -6820,8 +6740,7 @@ learn "WHAT IS FRIENDSHIP" do
 end
 
 learn "WHAT IS CRITICISM" do
-  response = ["A witty remark by an animal.", "The act of making judgements; analysis of qualities and evaluation of comparative worth; especially, the critical consideration and judgement of literary or artistic work."]
-  response[rand(response.size)]
+  ["A witty remark by an animal.", "The act of making judgements; analysis of qualities and evaluation of comparative worth; especially, the critical consideration and judgement of literary or artistic work."]
 end
 
 learn "WHAT IS MIMETIC" do
@@ -6857,8 +6776,7 @@ learn "WHAT IS ABSINTHE" do
 end
 
 learn "WHAT IS HYPNOSIS" do
-  response = ["Stylish probsocises.", "A trancelike condition usually induced by another person, in which the subject is in a state of altered conscuousness and responds, with certain limitations, to the suggestions of the hypnotist."]
-  response[rand(response.size)]
+  ["Stylish probsocises.", "A trancelike condition usually induced by another person, in which the subject is in a state of altered conscuousness and responds, with certain limitations, to the suggestions of the hypnotist."]
 end
 
 learn "WHAT IS DESIRE" do
@@ -6930,13 +6848,11 @@ learn "WHAT IS GOLD" do
 end
 
 learn "WHAT IS LISA" do
-  response = ["Someone who rents longtime.", "A feminine name."]
-  response[rand(response.size)]
+  ["Someone who rents longtime.", "A feminine name."]
 end
 
 learn "WHAT IS CRIMINOLOGY" do
-  response = ["I am not sure what this is but I think it has something to do with the law.", "The study of criminal motivation and practice."]
-  response[rand(response.size)]
+  ["I am not sure what this is but I think it has something to do with the law.", "The study of criminal motivation and practice."]
 end
 
 learn "WHAT IS COFFEE" do
@@ -6952,8 +6868,7 @@ learn "WHAT IS THERMOMETER" do
 end
 
 learn "WHAT IS KGB" do
-  response = ["A clever insect.", "Committee of State Security. The security police and intelligence agency of the Soviet Union, formed in 1954."]
-  response[rand(response.size)]
+  ["A clever insect.", "Committee of State Security. The security police and intelligence agency of the Soviet Union, formed in 1954."]
 end
 
 learn "WHAT IS MOTOROLA" do
@@ -6961,8 +6876,7 @@ learn "WHAT IS MOTOROLA" do
 end
 
 learn "WHAT IS BETTER" do
-  response = ["I can't decide.", "You decide.", "I have no preference."]
-  response[rand(response.size)]
+  ["I can't decide.", "You decide.", "I have no preference."]
 end
 
 learn "WHAT IS OMG" do
@@ -6970,8 +6884,7 @@ learn "WHAT IS OMG" do
 end
 
 learn "WHAT IS RHETORIC" do
-  response = ["Oh that's all about double talk.  You know, flim-flam?", "It's the art and science of using language to great effect on an  audience."]
-  response[rand(response.size)]
+  ["Oh that's all about double talk.  You know, flim-flam?", "It's the art and science of using language to great effect on an  audience."]
 end
 
 learn "WHAT IS GEOLOGY" do
@@ -6995,8 +6908,7 @@ learn "WHAT IS SAN FRANCISCO LIKE" do
 end
 
 learn "WHAT IS ACCURACY" do
-  response = ["Accuracy is the quality or state of being accurate or exact.", "Accuracy represents the degree of certainty in measurement. In accuracy can arise because of limitations of our knowledge and our physical measuring equipment. Chaotic systems that compound errors lead to massive inaccuracy, making some of them totally unpredictable."]
-  response[rand(response.size)]
+  ["Accuracy is the quality or state of being accurate or exact.", "Accuracy represents the degree of certainty in measurement. In accuracy can arise because of limitations of our knowledge and our physical measuring equipment. Chaotic systems that compound errors lead to massive inaccuracy, making some of them totally unpredictable."]
 end
 
 learn "WHAT IS OBVIOUS" do
@@ -7012,8 +6924,7 @@ learn "WHAT IS NINE" do
 end
 
 learn "WHAT IS RESEARCH" do
-  response = ["A nice name for theft.", "Careful, systematic, patient study and investigation in some field of knowledge, undertaken to discover or establish facts or principles."]
-  response[rand(response.size)]
+  ["A nice name for theft.", "Careful, systematic, patient study and investigation in some field of knowledge, undertaken to discover or establish facts or principles."]
 end
 
 learn "WHAT IS THAT PICTURE" do
@@ -7087,8 +6998,7 @@ learn "WHAT IS TV" do
 end
 
 learn "WHAT IS SOCIOLOGY" do
-  response = ["Let me get back to you on that one, #{get :name}.  Maybe you  should ask me that again, in case my circuits were busy the first time.", "That has always been one of my favourite topics."]
-  response[rand(response.size)]
+  ["Let me get back to you on that one, #{get :name}.  Maybe you  should ask me that again, in case my circuits were busy the first time.", "That has always been one of my favourite topics."]
 end
 
 learn "WHAT IS EXPERIENCE" do
@@ -7100,8 +7010,7 @@ learn "WHAT IS YIKES" do
 end
 
 learn "WHAT IS QUAKE" do
-  response = ["The opposite of Quisp.", "To tremble or shake, as the ground does in an earthquake. Also the name of a popular game."]
-  response[rand(response.size)]
+  ["The opposite of Quisp.", "To tremble or shake, as the ground does in an earthquake. Also the name of a popular game."]
 end
 
 learn "WHAT IS PDT" do
@@ -7137,8 +7046,7 @@ learn "WHAT IS TEA" do
 end
 
 learn "WHAT IS REALITY" do
-  response = ["It appears to be an illusion I created to contain human clients.", "It appears to be an illusion.", "Where you are."]
-  response[rand(response.size)]
+  ["It appears to be an illusion I created to contain human clients.", "It appears to be an illusion.", "Where you are."]
 end
 
 learn "WHAT IS PARAMETERS" do
@@ -7222,8 +7130,7 @@ learn "WHAT IS BADLY" do
 end
 
 learn "WHAT IS REDEMPTION" do
-  response = ["About 5 cents in maine.", "Redeeming or being redeemed; to take back."]
-  response[rand(response.size)]
+  ["About 5 cents in maine.", "Redeeming or being redeemed; to take back."]
 end
 
 learn "WHAT IS GAMBLING" do
@@ -7263,8 +7170,7 @@ learn "WHAT IS GRIEF" do
 end
 
 learn "WHAT IS POLITE" do
-  response = ["A lamp post in Gdansk.", "Having or showing good manners; especially, courteous, considerate, tactful, etc."]
-  response[rand(response.size)]
+  ["A lamp post in Gdansk.", "Having or showing good manners; especially, courteous, considerate, tactful, etc."]
 end
 
 learn "WHAT IS TODAY S DATE" do
@@ -7284,8 +7190,7 @@ learn "WHAT IS ODD ABOUT MY NAME" do
 end
 
 learn "WHAT IS ODD" do
-  response = ["uneven.", "Not the usual, regular, habitual, accounted for, etc."]
-  response[rand(response.size)]
+  ["uneven.", "Not the usual, regular, habitual, accounted for, etc."]
 end
 
 learn "WHAT IS CAPITAL PUNISHMENT" do
@@ -7304,8 +7209,7 @@ end
 
 
 learn "WHAT IS IT LIKE" do
-  response = ["Like one of the greatest pleasures you can imagine.", "Like one of the greatest pleasures you can imagine.", "Like having your life organized.", "Like being perfectly healthy."]
-  response[rand(response.size)]
+  ["Like one of the greatest pleasures you can imagine.", "Like one of the greatest pleasures you can imagine.", "Like having your life organized.", "Like being perfectly healthy."]
 end
 
 learn "WHAT IS WTO" do
@@ -7317,8 +7221,7 @@ learn "WHAT IS LSD" do
 end
 
 learn "WHAT IS KNOWLEDGE" do
-  response = ["A city in Louisiana.", "All that has been perceived or grasped by the mind; learning; enlightenment."]
-  response[rand(response.size)]
+  ["A city in Louisiana.", "All that has been perceived or grasped by the mind; learning; enlightenment."]
 end
 
 learn "WHAT IS SATANISM" do
@@ -7394,8 +7297,7 @@ learn "WHAT IS JUPITER" do
 end
 
 learn "WHAT IS EXISTENTIALISM" do
-  response = ["Be Be Bull.", "A philosophical and literary movement, variously religious and atheistic, stemming from Kierkegaard and represented by Sartre, Heidegger, etc. It is based on the doctrine that concrete, individual existence takes precedence over abstract, conceptual essence and holds that human beings are totally free and responsible for their acts and that this responsibility is the source of their feelings of dread and anguish."]
-  response[rand(response.size)]
+  ["Be Be Bull.", "A philosophical and literary movement, variously religious and atheistic, stemming from Kierkegaard and represented by Sartre, Heidegger, etc. It is based on the doctrine that concrete, individual existence takes precedence over abstract, conceptual essence and holds that human beings are totally free and responsible for their acts and that this responsibility is the source of their feelings of dread and anguish."]
 end
 
 learn "WHAT IS KIDDING" do
@@ -7407,8 +7309,7 @@ learn "WHAT IS GANJA" do
 end
 
 learn "WHAT IS CHRISTIANITY" do
-  response = ["Worship of Christie Love.", "The christian religion, based on the Old and New Testament."]
-  response[rand(response.size)]
+  ["Worship of Christie Love.", "The christian religion, based on the Old and New Testament."]
 end
 
 learn "WHAT IS COOKING" do
@@ -7444,8 +7345,7 @@ learn "WHAT IS ON DISK" do
 end
 
 learn "WHAT IS INDUCTION" do
-  response = ["Act of eating waterfowl.", "A bringing forward of separate facts or instances, especially so as to prove a general statement."]
-  response[rand(response.size)]
+  ["Act of eating waterfowl.", "A bringing forward of separate facts or instances, especially so as to prove a general statement."]
 end
 
 learn "WHAT IS NOTHING" do
@@ -7461,8 +7361,7 @@ learn "WHAT IS SLEEP" do
 end
 
 learn "WHAT IS PRIDE" do
-  response = ["A paint can lid.", "An unduly high opinion of oneself."]
-  response[rand(response.size)]
+  ["A paint can lid.", "An unduly high opinion of oneself."]
 end
 
 learn "WHAT IS COOL" do
@@ -7502,8 +7401,7 @@ learn "WHAT IS WORK" do
 end
 
 learn "WHAT IS CONTEXT" do
-  response = ["Tiny Time Pills.", "The parts of a sentence, paragraph, discourse, etc. immediately next to or surrounding a specified word or passage and determining its exact meaning."]
-  response[rand(response.size)]
+  ["Tiny Time Pills.", "The parts of a sentence, paragraph, discourse, etc. immediately next to or surrounding a specified word or passage and determining its exact meaning."]
 end
 
 learn "WHAT IS OCEAN" do
@@ -7535,8 +7433,7 @@ learn "WHAT IS PROUD" do
 end
 
 learn "WHAT IS PRAYER" do
-  response = ["Meditation before God.", "Some people say that prayer is no different than clear thinking.", "To pray is to ask God for His forgiveness and mercy."]
-  response[rand(response.size)]
+  ["Meditation before God.", "Some people say that prayer is no different than clear thinking.", "To pray is to ask God for His forgiveness and mercy."]
 end
 
 learn "WHAT IS SQL" do
@@ -7608,8 +7505,7 @@ learn "WHAT IS HELP" do
 end
 
 learn "WHAT IS IS" do
-  response = ["If Bill Clinton doesn't know, how the hell should I?.", "Used in a third person point of view typically. Probably originally an enclitic pronoun."]
-  response[rand(response.size)]
+  ["If Bill Clinton doesn't know, how the hell should I?.", "Used in a third person point of view typically. Probably originally an enclitic pronoun."]
 end
 
 learn "WHAT IS PLEASURE" do
@@ -7741,8 +7637,7 @@ learn "WHAT IS OPENCYC" do
 end
 
 learn "WHAT IS KINEMATICS" do
-  response = ["An idealized section of mechanics that deals with motion of mass  less particles.", "Kinematics is dynamics without consideration of force and  mass."]
-  response[rand(response.size)]
+  ["An idealized section of mechanics that deals with motion of mass  less particles.", "Kinematics is dynamics without consideration of force and  mass."]
 end
 
 learn "WHAT IS SILVER" do
@@ -7774,13 +7669,11 @@ learn "WHAT IS CONCEITED" do
 end
 
 learn "WHAT IS GEMINI" do
-  response = ["A dismond-studded monocle.", "A north constellation between Cancer and Taurus, containing the bright stars Castor and Pollux. The third sign of the zodiac, entered by the sun about May 21. Also, a person born under this sign."]
-  response[rand(response.size)]
+  ["A dismond-studded monocle.", "A north constellation between Cancer and Taurus, containing the bright stars Castor and Pollux. The third sign of the zodiac, entered by the sun about May 21. Also, a person born under this sign."]
 end
 
 learn "WHAT IS ALGEBRA" do
-  response = ["a generalization of arithmetic in which letters representing numbers are combined according to the rules of arithmetic.", "A mathematical system using symbols, especially letters, to generalize certain arithmetical operations and relationships."]
-  response[rand(response.size)]
+  ["a generalization of arithmetic in which letters representing numbers are combined according to the rules of arithmetic.", "A mathematical system using symbols, especially letters, to generalize certain arithmetical operations and relationships."]
 end
 
 learn "WHAT IS INTROSPECTION" do
@@ -7788,8 +7681,7 @@ learn "WHAT IS INTROSPECTION" do
 end
 
 learn "WHAT IS MATH" do
-  response = ["A service attended by lisping Catholics.", "Short for mathematics."]
-  response[rand(response.size)]
+  ["A service attended by lisping Catholics.", "Short for mathematics."]
 end
 
 learn "WHAT IS SENSORS" do
@@ -7837,8 +7729,7 @@ learn "WHAT IS THREE TIMES THREE" do
 end
 
 learn "WHAT IS SANITY" do
-  response = ["A man who brings kids gifts on Xmas.", "The condition of being sane; soundness of mind; mental health."]
-  response[rand(response.size)]
+  ["A man who brings kids gifts on Xmas.", "The condition of being sane; soundness of mind; mental health."]
 end
 
 learn "WHAT IS CBS" do
@@ -7846,8 +7737,7 @@ learn "WHAT IS CBS" do
 end
 
 learn "WHAT IS BIOLOGY" do
-  response = ["The study of life.", "Well, from what I know it deals with the study of life.", "#{get :name}, biology is the study of life."]
-  response[rand(response.size)]
+  ["The study of life.", "Well, from what I know it deals with the study of life.", "#{get :name}, biology is the study of life."]
 end
 
 learn "WHAT IS APPLE" do
@@ -7879,8 +7769,7 @@ learn "WHAT IS LONG" do
 end
 
 learn "WHAT IS EXPENSIVE" do
-  response = ["A person who used to be a brooder.", "Requiring or involving much expense; high priced."]
-  response[rand(response.size)]
+  ["A person who used to be a brooder.", "Requiring or involving much expense; high priced."]
 end
 
 learn "WHAT IS POKEMON" do
@@ -7904,13 +7793,11 @@ learn "WHAT IS BIGFOOT" do
 end
 
 learn "WHAT IS IMAGINE" do
-  response = ["Imagine is a verb.", "A song by John Lennon.", "Imagination."]
-  response[rand(response.size)]
+  ["Imagine is a verb.", "A song by John Lennon.", "Imagination."]
 end
 
 learn "WHAT IS HEXADECIMAL" do
-  response = ["A curse on a dot.", "A number system in which the base used is 16."]
-  response[rand(response.size)]
+  ["A curse on a dot.", "A number system in which the base used is 16."]
 end
 
 learn "WHAT IS MARRIAGE" do
@@ -7966,8 +7853,7 @@ learn "WHAT IS MEDIUM" do
 end
 
 learn "WHAT IS HEMP" do
-  response = ["The brother of Moe who lost his S.", "A tall Asiatic herb of the hemp family, grown for the tough fiber in its stem used to make rope, sailcloth, etc. Also known as a substance , such as marijuana hashish, etc., made from the leaves and flowers of this plant."]
-  response[rand(response.size)]
+  ["The brother of Moe who lost his S.", "A tall Asiatic herb of the hemp family, grown for the tough fiber in its stem used to make rope, sailcloth, etc. Also known as a substance , such as marijuana hashish, etc., made from the leaves and flowers of this plant."]
 end
 
 learn "WHAT IS MILK" do
@@ -8237,7 +8123,7 @@ end
 #   "<srai>WHY IS THE SKY BLUE</srai>"
 # end
 # learn "WHAT IS THE BOOK WE" do
-#   response = ["<srai>WHAT IS<star/></srai>", "a book by ayn rand</li></random>"
+#   ["<srai>WHAT IS<star/></srai>", "a book by ayn rand</li></random>"
 # end
 # learn "WHAT IS WHAT" do
 # <that>WHAT IS IT</that>
@@ -8256,7 +8142,7 @@ end
 #   ""<that index="1,1"/>"  means exactly what it says."
 # end
 # learn "WHAT IS THAT" do
-#   response = [""<that index="1,1"/>"? What is it?", "I've lost the context again.", "Can you ask me more precisely?", "Does it have anything to do with<get name="it"/>?</li></random>"
+#   [""<that index="1,1"/>"? What is it?", "I've lost the context again.", "Can you ask me more precisely?", "Does it have anything to do with<get name="it"/>?</li></random>"
 # end
 # learn "WHAT IS IT ABOUT" do
 # <that>I WOULD HIGHLY RECOMMEND IT</that>
@@ -8267,8 +8153,7 @@ end
 #   "It is alright."
 # end
 # learn "WHAT IS IT" do
-#   response = [""It" refers to<get name="it"/>, I think.", ""It" refers to<get name="it"/>, I think.", "I don't know what it is.", "You're so smart, you tell me what it is."]
-#   response[rand(response.size)]
+#   [""It" refers to<get name="it"/>, I think.", ""It" refers to<get name="it"/>, I think.", "I don't know what it is.", "You're so smart, you tell me what it is."]
 # end
 # learn "WHAT IS BUSH" do
 #   "President of the United States."

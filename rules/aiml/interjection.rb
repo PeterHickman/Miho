@@ -7,7 +7,7 @@
 # Last modified 10/5/2011 
 
 learn "INTERJECTION" do
-  response = [
+  [
 	"Ah.",  
 	"Aha.",    
 	"Ahem.",  
@@ -64,5 +64,4 @@ learn "INTERJECTION" do
 	"Yikes!",    
 	"Yippee!"
   ]
-  response[rand(response.size)]
 end

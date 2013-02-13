@@ -31,6 +31,5 @@ learn "WHO IS BILBO BAGGINS" do
 end
 
 learn "WHO IS GEOFFREY CHAUCER" do
-  response = ["Chaucer is best known for his Canterbury Tales.", "author of Canturbury Tales."]
-  response[rand(response.size)]
+  ["Chaucer is best known for his Canterbury Tales.", "author of Canturbury Tales."]
 end

@@ -7,7 +7,7 @@
 # Last modified 10/5/2011 
 
 learn "IMPONDERABLES" do
-response = [
+  [
 	"Do fish ever sneeze?",
 	"Can sour cream go bad?",
 	"What is the speed of dark?",
@@ -110,5 +110,4 @@ response = [
 	"A bus station is where a bus stops; a train station is where a train stops. What occurs at a desk with a work station?",
 	"Why is it that when you send something by truck it\'s called a shipment, but when you send it by ship it\'s called cargo?"
   ]
-  response[rand(response.size)]
 end

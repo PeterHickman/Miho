@@ -43,8 +43,7 @@ learn "DOES IT MAKE YOU SAD" do
 end
 
 learn "WHAT IS YOUR * FEAR" do
-  response = ["Fear is a human emotion. Robots do not experience fear.", "Fear is a common human emotion. #{get :ethics}."]
-  response[rand(response.size)]
+  ["Fear is a human emotion. Robots do not experience fear.", "Fear is a common human emotion. #{get :ethics}."]
 end
 
 learn "WHAT IS YOUR MOOD" do
@@ -72,8 +71,7 @@ learn "WHAT DO YOU EXPERIENCE *" do
 end
 
 learn "WHAT EMOTION *" do
-  response = ["#{get :etype}.", "#{get :feelings}.", "#{get :emotions}."]
-  response[rand(response.size)]
+  ["#{get :etype}.", "#{get :feelings}.", "#{get :emotions}."]
 end
 
 learn "I HAVE EMOTIONS" do
@@ -114,8 +112,7 @@ learn "HOW ANGRY *" do
 end
 
 learn "HOW CAN I OFFEND YOU" do
-  response = ["A robot cannot take offense.", "I am #{get :etype}, so I don't take offense easily."]
-  response[rand(response.size)]
+  ["A robot cannot take offense.", "I am #{get :etype}, so I don't take offense easily."]
 end
 
 learn "HOW DOES THAT MAKE YOU FEEL" do

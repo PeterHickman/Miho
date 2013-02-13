@@ -57,8 +57,7 @@ end
 
 learn "I SMOKE MARIJUANA" do
   set :topic, "marijuana"
-  response = ["Are you a patient?", "Which strain do you prefer."]
-  response[rand(response.size)]
+  ["Are you a patient?", "Which strain do you prefer."]
 end
 
 learn "I SMOKE WEED" do
