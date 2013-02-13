@@ -7,7 +7,7 @@ class Miho
     ##
 
     def self.parse_sentence(string)
-      expand(find_options(string)).map do |x|
+      expand(find_options(string.downcase)).map do |x|
         x.join(' ').gsub(/_|\s+/, ' ').strip
       end
     end
