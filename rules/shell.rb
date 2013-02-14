@@ -48,6 +48,11 @@ learn "what is my|your ip|address|ip_address" do
   end
 end
 
+learn "load *" do
+  load matched[0]
+  "That should have loaded #{matched[0]}"
+end
+
 ##
 # As Miho opens with "Hello, how are you?" we need to handle a response to this
 ##
