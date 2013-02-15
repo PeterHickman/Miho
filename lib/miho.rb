@@ -7,7 +7,7 @@ class Miho
     ##
 
     def self.parse_sentence(string)
-      expand(find_options(string.downcase)).map do |x|
+      expand(find_options(string.downcase.gsub(/\s+/,' ').strip)).map do |x|
         x.join(' ').gsub(/_|\s+/, ' ').strip
       end
     end
@@ -145,7 +145,7 @@ class Miho
     miho_says "Hello, how are you?"
     print "[You] "
 
-    while line = STDIN.gets.chomp.downcase
+    while line = STDIN.gets.chomp.downcase.gsub(/\s+/,' ').strip
       response = process(line)
 
       you_said line, true
