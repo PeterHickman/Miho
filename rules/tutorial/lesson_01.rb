@@ -52,7 +52,7 @@
 #
 # Well neither do I :) But seriously this is how Miho handles things that she does not have
 # a rule for. There are two solution to this; firstly we could write a rule to handle this
-# or we could teach Miho an propriate response. We will come to these later but for now you
+# or we could teach Miho an apropriate response. We will come to these later but for now you
 # should just browse over the files in the 'rules' directory (bonus points for looking in
 # 'rules/aiml/' but it will not help too much at this point) and move on to lesson 2
 # 

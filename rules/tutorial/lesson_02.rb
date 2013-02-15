@@ -8,7 +8,7 @@ end
 # The rule starts with 'learn' and then has the string we want to match, 
 # "knock knock". This is followed by 'do' and we enter the body of the
 # rule. In this case we want to simply return the string "whos there".
-# All rules must return, as their last action a string or an array of
+# All rules must return, as their last action, a string or an array of
 # strings.
 #
 # The rule end with 'end'
