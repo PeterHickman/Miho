@@ -68,8 +68,4 @@ end
 # either pattern the rule will be run. This helps us define a rule only once
 # that can cope with the many ways one can ask the same thing. There are 
 # other things we can do to reduce the number of patterns we have to write
-# and we will come to them later
-
-# Wild cards
-# 
-# Rule patterns
+# and we will come to them in the next lesson
