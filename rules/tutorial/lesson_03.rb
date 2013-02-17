@@ -16,7 +16,7 @@ end
 # "roll dice"
 #
 # In the input pattern the '[a]' indicates that the parts between the '['
-# and ']' are optional. The user may of may not enter them as their input.
+# and ']' are optional. The user may or may not enter them as their input.
 #
 # The 'die|dice' indicates that the user could enter either 'die' or 'dice'
 # at this point in the pattern.
