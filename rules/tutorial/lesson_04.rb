@@ -32,7 +32,7 @@ end
 # [You] bye
 # [Miho] Bye. Come again
 # $ 
-
+# 
 # The "*" in the pattern will match any number of words (be it one with 'germany'
 # or more with 'outer mongolia) in the input but will not match no input. 
 # So if we try the following:
