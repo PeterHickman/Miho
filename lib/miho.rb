@@ -98,6 +98,7 @@ class Miho
     @quit = false
     @debug = false
     @extras = Hash.new
+    @matched_pattern = nil
 
     @last_lines = Array.new
 
@@ -115,7 +116,8 @@ class Miho
           :term   => x,
           :regexp => Regexp.new("^#{x.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
           :block  => block,
-          :size   => x.split(/\s+/).size
+          :size   => x.split(/\s+/).size,
+          :stars  => x.split(/\s+/).select{|i| i == "*"}.size
         }
       end
     end
@@ -164,6 +166,9 @@ class Miho
       remember(line, response)
 
       say_debug "<Checked #{@checked} of #{@total} patterns>"
+      if @matched_pattern
+        say_debug "<matched #{@matched_pattern.inspect}>"
+      end
 
       miho_says response unless line == ''
 
@@ -232,6 +237,7 @@ class Miho
       if y
         @matched = y[1..-1]
         response = possible[:block].call
+        @matched_pattern = possible
         break
       end
     end
@@ -303,7 +309,13 @@ class Miho
   # that should be matched by the others. And you will get an error
 
   def order_terms
-    @terms.sort!{|a,b| b[:size] <=> a[:size]}
+    @terms.sort! do |a,b|
+      if a[:stars] == b[:stars]
+        a[:size] <=> b[:size]
+      else
+        a[:stars] <=> b[:stars]
+      end
+    end
   end
 end
 
