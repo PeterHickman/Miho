@@ -227,6 +227,7 @@ class Miho
 
   def process(term)
     @checked = 0
+    @matched_pattern = nil
 
     response = nil
 
