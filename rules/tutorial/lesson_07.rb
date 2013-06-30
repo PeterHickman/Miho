@@ -13,13 +13,18 @@
 # This is the main loop. Once started Miho will greet the user and await their input.
 # Once input is given Miho will attempt to match it with a rule that has already been
 # loaded and return the results of that. Otherwise Miho will indicate that no rule was
-# matched and simply wait for new input
+# matched and simply wait for new input. You do not have to call this from the shell.
+# The shell will call this for you after loading all the rules.
 
 # quit()
 #
 # Once repl() has started it will not quit unless an internal flag has been set. This
 # is the command that will set the flag. Once the flag is set Miho will say goodbye and
 # the shell will stop
+
+# process(line)
+#
+# Takes a line of input and trys to match it again the rules. It will then
 
 # load(filename)
 #
