@@ -18,6 +18,4 @@ miho do
   load 'rules/time.rb'
   load 'rules/maths.rb'
   load 'rules/conversion.rb'
-
-  repl
 end
