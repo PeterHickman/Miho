@@ -65,3 +65,7 @@ end
 learn "[im|i'm|i_am] fine [thank_you|thanks]" do
   "Glad to hear it"
 end
+
+learn "miho *" do
+  process(matched[0])
+end

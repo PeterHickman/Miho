@@ -137,6 +137,8 @@ class Miho
   end
 
   def learn_this_term(term)
+    say_debug "<Learning '#{term}' response to '#{@last_lines.last.first}'>"
+
     @extras[@last_lines.last.first] = term
   end
 
@@ -151,26 +153,6 @@ class Miho
     while line = STDIN.gets.chomp.downcase.gsub(/\s+/,' ').strip
       response = process(line)
 
-      you_said line, true
-
-      unless response
-        if line !~ /\?$/
-          # Re-phrase as a question for lazy typists
-          response = process("#{line}?")
-        end
-      end
-
-      unless response
-        response = "Sorry I didn't understand '#{line}'" unless line == ''
-      end
-
-      remember(line, response)
-
-      say_debug "<Checked #{@checked} of #{@total} patterns>"
-      if @matched_pattern
-        say_debug "<matched #{@matched_pattern.inspect}>"
-      end
-
       miho_says response unless line == ''
 
       break if @quit
@@ -178,6 +160,32 @@ class Miho
     end
 
     save_extras
+  end
+
+  def process(line)
+    response = process_line(line)
+
+    you_said line, true
+
+    unless response
+      if line !~ /\?$/
+        # Re-phrase as a question for lazy typists
+        response = process_line("#{line}?")
+      end
+    end
+
+    unless response
+      response = "Sorry I didn't understand '#{line}'" unless line == ''
+    end
+
+    remember(line, response)
+
+    say_debug "<Checked #{@checked} of #{@total} patterns>"
+    if @matched_pattern
+      say_debug "<matched #{@matched_pattern.inspect}>"
+    end
+
+    return response
   end
 
   def load(filename)
@@ -235,7 +243,7 @@ class Miho
     end
   end
 
-  def process(term)
+  def process_line(term)
     @checked = 0
     @matched_pattern = nil
 
@@ -335,5 +343,6 @@ class Object
     x = Miho.new(options)
     
     x.instance_eval(&block)
+    x.repl
   end
 end
