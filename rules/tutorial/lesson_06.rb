@@ -15,7 +15,7 @@ end
 #
 # There are a couple of options that we can give to the shell to change it's 
 # behaviour. The first is that we can get it to remember all the things
-# we told it to learn (as with 'quantum chromodynamics') between session.
+# we told it to learn (as with 'quantum chromodynamics') between sessions.
 
 miho :extra => 'extras.txt' do
   load 'rules/shell.rb'

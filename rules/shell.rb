@@ -35,7 +35,7 @@ learn "what is my|your ip|address|ip_address" do
   x = %x{ifconfig}
   y = nil
 
-  x.each do |line|
+  x.split("\n").each do |line|
     if line =~ /inet\s+(.*)\snetmask/
       y = $1 unless $1 == '127.0.0.1'
     end

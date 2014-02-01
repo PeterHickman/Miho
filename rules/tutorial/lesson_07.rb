@@ -24,7 +24,7 @@
 
 # process(line)
 #
-# Takes a line of input and trys to match it again the rules. It will then
+# Takes a line of input and trys to match it again the rules.
 
 # load(filename)
 #
