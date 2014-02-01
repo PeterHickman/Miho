@@ -53,6 +53,11 @@ learn "load *" do
   "That should have loaded #{matched[0]}"
 end
 
+learn "unload *" do
+  unload matched[0]
+  "That should have removed all the rules loaded from #{matched[0]}"
+end
+
 ##
 # As Miho opens with "Hello, how are you?" we need to handle a response to this
 ##

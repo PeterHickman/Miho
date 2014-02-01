@@ -31,6 +31,13 @@
 # This will load a file of rules. Actually it just assumes that the given file is a
 # valid Ruby program and executes it. Hopefully it contains a bunch of rules but if
 # the truth be told it could contain anything.
+#
+# A file can be loaded as many times as you want as the old data will be removed
+# when a file is reloaded.
+
+# unload(filename)
+# 
+# This will remove all the rules that were loaded from the given filename.
 
 # set(k, v)
 #

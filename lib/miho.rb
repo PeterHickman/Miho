@@ -117,7 +117,8 @@ class Miho
           :regexp => Regexp.new("^#{x.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
           :block  => block,
           :size   => x.split(/\s+/).size,
-          :stars  => x.split(/\s+/).select{|i| i == "*"}.size
+          :stars  => x.split(/\s+/).select{|i| i == "*"}.size,
+          :file   => @file_being_loaded
         }
       end
     end
@@ -188,12 +189,21 @@ class Miho
   end
 
   def load(filename)
+    @file_being_loaded = filename
+
+    unload(filename)
+
     begin
       instance_eval(File.open(filename).read)
       say_debug("<Loaded #{filename}>")
     rescue Exception => e
       miho_says("Error loading '#{filename}' #{e}")
     end
+  end
+
+  def unload(filename)
+    @terms.delete_if{|t| t[:file] == filename}
+    @total = @terms.size
   end
 
   def get(k)
