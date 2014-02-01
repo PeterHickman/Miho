@@ -58,6 +58,10 @@ learn "unload *" do
   "That should have removed all the rules loaded from #{matched[0]}"
 end
 
+learn "dump terms" do
+  dump_terms
+end
+
 ##
 # As Miho opens with "Hello, how are you?" we need to handle a response to this
 ##
