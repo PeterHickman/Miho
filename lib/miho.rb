@@ -118,7 +118,8 @@ class Miho
     end
 
     terms.each do |term|
-      say_debug term
+      say_debug "<Term is: #{term}>"
+
       PatternReader.parse_sentence(term).each do |x|
         @total += 1
         @terms << {
@@ -161,10 +162,10 @@ class Miho
     miho_says "Hello, how are you?"
     print "[You] "
 
-    while line = STDIN.gets.chomp.downcase.gsub(/\s+/,' ').strip
+    while line = STDIN.gets
       response = process(line)
 
-      miho_says response unless line == ''
+      miho_says response unless line =~ /^\s*$/
 
       break if @quit
       print "[You] "
@@ -174,6 +175,8 @@ class Miho
   end
 
   def process(line)
+    line = line.chomp.downcase.gsub(/\s+/,' ').strip
+
     response = process_line(line)
 
     you_said line, true
@@ -220,11 +223,7 @@ class Miho
   def get(k)
     k = validate_key(k)
 
-    if @memory.has_key?(k)
-      @memory[k]
-    else
-      "*#{k}*"
-    end
+    @memory[k]
   end
 
   def set(*x)
@@ -236,6 +235,12 @@ class Miho
         k = validate_key(k)
         @memory[k] = v
       end
+    end
+  end
+
+  def dump_terms
+    @terms.each_with_index do |term, index|
+      say_debug "%5d %s" % [index, term.inspect]
     end
   end
 
@@ -264,7 +269,7 @@ class Miho
     end
   end
 
-  def process_line(term)
+  def process_line(line)
     @checked = 0
     @matched_pattern = nil
 
@@ -273,7 +278,7 @@ class Miho
     @terms.each do |possible|
       @checked += 1
 
-      y = possible[:regexp].match(term)
+      y = possible[:regexp].match(line)
       if y
         valid_conditions = true
         possible[:conditions].each do |k, v|
@@ -293,7 +298,7 @@ class Miho
       end
     end
 
-    set :that, term
+    set :that, line
 
     if response
       if response.class == Array
@@ -303,7 +308,7 @@ class Miho
       end
     else
       # Returns a learnt phrase or nil
-      @extras[term]
+      @extras[line]
     end
   end
 
@@ -330,9 +335,9 @@ class Miho
   def say_debug(text)
     if @debug
       say text
-      @memory.each do |k,v|
-        say "<|#{k}| = |#{v}|>"
-      end
+      # @memory.each do |k,v|
+      #   say "<|#{k}| = |#{v}|>"
+      # end
     end
   end
 
