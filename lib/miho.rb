@@ -118,9 +118,10 @@ class Miho
     end
 
     terms.each do |term|
-      say_debug "<Term is: #{term}>"
+      say_debug "Adding term: #{term}"
 
       PatternReader.parse_sentence(term).each do |x|
+        say_debug "Rule term: #{x}"
         @total += 1
         @terms << {
           :source     => term,
@@ -149,7 +150,7 @@ class Miho
   end
 
   def learn_this_term(term)
-    say_debug "<Learning '#{term}' response to '#{@last_lines.last.first}'>"
+    say_debug "Learning '#{term}' response to '#{@last_lines.last.first}'"
 
     @extras[@last_lines.last.first] = term
   end
@@ -168,6 +169,9 @@ class Miho
       miho_says response unless line =~ /^\s*$/
 
       break if @quit
+      
+      debug_memory
+
       print "[You] "
     end
 
@@ -194,9 +198,9 @@ class Miho
 
     remember(line, response)
 
-    say_debug "<Checked #{@checked} of #{@total} patterns>"
+    say_debug "Checked #{@checked} of #{@total} patterns"
     if @matched_pattern
-      say_debug "<matched #{@matched_pattern.inspect}>"
+      say_debug "matched #{@matched_pattern.inspect}"
     end
 
     return response
@@ -209,7 +213,7 @@ class Miho
 
     begin
       instance_eval(File.open(filename).read)
-      say_debug("<Loaded #{filename}>")
+      say_debug("Loaded #{filename}")
     rescue Exception => e
       miho_says("Error loading '#{filename}' #{e}")
     end
@@ -283,7 +287,7 @@ class Miho
         valid_conditions = true
         possible[:conditions].each do |k, v|
           if get(k) != v
-            say_debug "Condition failed #{k} != #{v} is #{get k}"
+            say_debug "Condition failed [#{k}] != [#{v}] was [#{get k}]"
             valid_conditions = false
             break
           end
@@ -334,10 +338,15 @@ class Miho
 
   def say_debug(text)
     if @debug
-      say text
-      # @memory.each do |k,v|
-      #   say "<|#{k}| = |#{v}|>"
-      # end
+      say "<#{text}>"
+    end
+  end
+
+  def debug_memory
+    if @debug
+      @memory.each do |k,v|
+        say_debug "[#{k}] = [#{v}]"
+      end
     end
   end
 
