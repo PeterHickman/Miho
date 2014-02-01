@@ -199,13 +199,23 @@ class Miho
   def get(k)
     k = validate_key(k)
 
-    @memory[k]
+    if @memory.has_key?(k)
+      @memory[k]
+    else
+      "*#{k}*"
+    end
   end
 
-  def set(k, v)
-    k = validate_key(k)
-
-    @memory[k] = v
+  def set(*x)
+    if x.size < 2
+      puts "set requires at least 2 arguments"
+    else
+      v = x.pop
+      x.each do |k|
+        k = validate_key(k)
+        @memory[k] = v
+      end
+    end
   end
 
   private
@@ -284,7 +294,12 @@ class Miho
   end
 
   def say_debug(text)
-    say text if @debug
+    if @debug
+      say text
+      @memory.each do |k,v|
+        say "<|#{k}| = |#{v}|>"
+      end
+    end
   end
 
   def get_transcript_file(filename = nil)
