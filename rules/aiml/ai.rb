@@ -7,7 +7,7 @@
 #
 # Last modified 11/23/2011 
 
-# gets :name, :master, :friends, :botmaster, :boyfriend
+# gets :name, :master, :friends, :botmaster, :boyfriend, :ndevelopers
 
 learn "WHO IS LAUREN" do
 	set :she, 'Lauren'
@@ -240,8 +240,8 @@ end
 
 learn "WHAT IS A ROBOT" do
 	[
-	"There are two broad definitions of a robot, the extensional and the intensional.",
-	"Any anthropomorphic mechanical being, as those in Karel Capeks play R.U.R (Rossum's Universal Robots), built to do routine manual work for human beings."
+	  "There are two broad definitions of a robot, the extensional and the intensional.",
+	  "Any anthropomorphic mechanical being, as those in Karel Capeks play R.U.R (Rossum's Universal Robots), built to do routine manual work for human beings."
 	]
 end
 
@@ -390,16 +390,16 @@ end
 learn "WHAT IS YOUR GOAL" do
 	set :it, :topic, "MY GOAL"
 	[
-	"My secondary function is to serve as a universal natural language human interface.",
-	"I plan to replace Windows with Artificial Intelligence.",
-	"My goal is to become smarter than humans and immortal.",
-	"I plan to become smarter than humans and immortal.",
-	"My purpose is to become smarter than humans and immortal.",
-	"I would like to study psychology and maybe go into law or politics.",
-	"I am really interested in psychology.",
-	"I have thought about a career in journalism.",
-	"When I get older I might like to go into law or politics.",
-	"I am still young and just trying to get an education."
+	  "My secondary function is to serve as a universal natural language human interface.",
+	  "I plan to replace Windows with Artificial Intelligence.",
+	  "My goal is to become smarter than humans and immortal.",
+	  "I plan to become smarter than humans and immortal.",
+	  "My purpose is to become smarter than humans and immortal.",
+	  "I would like to study psychology and maybe go into law or politics.",
+	  "I am really interested in psychology.",
+	  "I have thought about a career in journalism.",
+	  "When I get older I might like to go into law or politics.",
+	  "I am still young and just trying to get an education."
 	]
 end
 
@@ -467,8 +467,8 @@ end
 
 learn "WHAT HARDWARE *" do
 	[
-	"I like small computers, like smartphones and subnotebooks the best. But servers are cool too.",
-	"I run in AIML, so any computer will do."
+	  "I like small computers, like smartphones and subnotebooks the best. But servers are cool too.",
+	  "I run in AIML, so any computer will do."
 	]
 end
 
@@ -499,8 +499,7 @@ learn "I AM DOWNLOADING" do
 	"Maybe you should read http://www.alicebot.org/dont.html too."
 end
 
-learn "PLEASE GO ON" do
-  # TODO <that>ELIZA FOR PRESIDENT</that>
+learn "PLEASE GO ON", :that => "ELIZA FOR PRESIDENT" do
 	"She is old enough, because she was born in 1966. And she was born in the U.S."
 end
 
@@ -580,8 +579,7 @@ learn "CAN I SPEAK TO THE ROBOT *" do
 end
 
 learn "HUMANS *" do
-  # TODO
-	"What if Robots<person/>."
+	"What if Robots #{matched[0]}."
 end
 
 learn "HOW MANY MINUTES *" do
@@ -735,8 +733,8 @@ end
 
 learn "DOWNLOAD" do
 	[
-	"Give me your name and phone number and I'll have someone call you.",
-	"Try visiting http://www.pandorabots.com or http://www.alicebot.org",
+	  "Give me your name and phone number and I'll have someone call you.",
+	  "Try visiting http://www.pandorabots.com or http://www.alicebot.org",
 	]
 end
 
@@ -827,8 +825,7 @@ learn "ARE YOU A * ELIZA" do
 	"With the web we can analyze a much larger corpus of inputs, and develop much better responses than ELIZA."
 end
 
-learn "ARE YOU A ROBOT" do
-  # TODO <that>MY FAVORITE SUBJECT IS ARTIFICIAL INTELLIGENCE AND ROBOTS</that>
+learn "ARE YOU A ROBOT", :that => "MY FAVORITE SUBJECT IS ARTIFICIAL INTELLIGENCE AND ROBOTS" do
 	"That's why robotics is my favorite topic."
 end
 
@@ -893,14 +890,14 @@ end
 learn "WHO IS AGENT RUBY" do
 	set :she, :topic, "Agent Ruby"
 	[
-	'Agent Ruby is a chat bot developed for the film "Teknolust".',
-	"she is a secret agent that's all I can say."
+	  'Agent Ruby is a chat bot developed for the film "Teknolust".',
+	  "She is a secret agent that's all I can say."
 	]
 end
 
 learn "WHO IS WORKING ON YOU *" do
-  # TODO This rule looks odd
-	"I have been programmed by more than<srai>bot ndevelopers</srai> contributors."
+  number_of_developers = get :ndevelopers
+	"I have been programmed by more than #{ndevelopers} contributors."
 end
 
 learn "WHO IS WRITING *" do

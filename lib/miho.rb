@@ -108,17 +108,28 @@ class Miho
   end
 
   def learn(*terms, &block)
+    conditions = Hash.new
+    
+    if terms.last.class == Hash
+      x = terms.pop
+      x.each do |k, v|
+        conditions[validate_key(k)] = v.downcase
+      end
+    end
+
     terms.each do |term|
+      say_debug term
       PatternReader.parse_sentence(term).each do |x|
         @total += 1
         @terms << {
-          :source => term,
-          :term   => x,
-          :regexp => Regexp.new("^#{x.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
-          :block  => block,
-          :size   => x.split(/\s+/).size,
-          :stars  => x.split(/\s+/).select{|i| i == "*"}.size,
-          :file   => @file_being_loaded
+          :source     => term,
+          :term       => x,
+          :regexp     => Regexp.new("^#{x.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
+          :block      => block,
+          :size       => x.split(/\s+/).size,
+          :stars      => x.split(/\s+/).select{|i| i == "*"}.size,
+          :file       => @file_being_loaded,
+          :conditions => conditions
         }
       end
     end
@@ -264,12 +275,25 @@ class Miho
 
       y = possible[:regexp].match(term)
       if y
-        @matched = y[1..-1]
-        response = possible[:block].call
-        @matched_pattern = possible
-        break
+        valid_conditions = true
+        possible[:conditions].each do |k, v|
+          if get(k) != v
+            say_debug "Condition failed #{k} != #{v} is #{get k}"
+            valid_conditions = false
+            break
+          end
+        end
+
+        if valid_conditions
+          @matched = y[1..-1]
+          response = possible[:block].call
+          @matched_pattern = possible
+          break
+        end
       end
     end
+
+    set :that, term
 
     if response
       if response.class == Array
