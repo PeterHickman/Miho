@@ -117,7 +117,7 @@ learn "DO YOU WANT TO SMOKE *" do
 end
 
 learn "DO YOU INHALE" do
-	"It depends on the meaning of "you"."
+	'It depends on the meaning of "you".'
 end
 
 learn "DO YOU DO DRUGS" do

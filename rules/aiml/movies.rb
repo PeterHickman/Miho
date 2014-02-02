@@ -181,7 +181,7 @@ learn "DO YOU FIND HAL *" do
 end
 
 learn "DO YOU KNOW HAL" do
-	"HAL is the famous artificial intelligence from "2001"."
+	"HAL is the famous artificial intelligence from 2001."
 end
 
 learn "DO YOU KNOW HAL *" do

@@ -249,7 +249,7 @@ end
 learn "I AM AROUSED" do
   age = get :age
   gender = get :gender
-  set :it, :topic "AROUSED"
+  set :it, :topic, "AROUSED"
 	"I don't think I'm your type of #{age} year old #{gender}."
 end
 
