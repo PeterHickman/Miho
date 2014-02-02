@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+def set(*args)
+end
 
 ARGV.each do |filename|
   puts "Processing #{filename}"
@@ -8,6 +10,10 @@ ARGV.each do |filename|
 
   def learn(*patterns, &block)
     $rule_number += 1
+
+    if patterns.last.class == Hash
+      patterns.pop
+    end
 
     patterns.map{|x| x.downcase.strip.gsub(/_/, "*")}.each do |pattern|
       if $patterns.has_key?(pattern)
