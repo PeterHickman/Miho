@@ -124,14 +124,15 @@ class Miho
         say_debug "Rule term: #{x}"
         @total += 1
         @terms << {
-          :source     => term,
-          :term       => x,
-          :regexp     => Regexp.new("^#{x.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
-          :block      => block,
-          :size       => x.split(/\s+/).size,
-          :stars      => x.split(/\s+/).select{|i| i == "*"}.size,
-          :file       => @file_being_loaded,
-          :conditions => conditions
+          :source       => term,
+          :term         => x,
+          :regexp       => Regexp.new("^#{x.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
+          :block        => block,
+          :size         => x.split(/\s+/).size,
+          :stars        => x.split(/\s+/).select{|i| i == "*"}.size,
+          :file         => @file_being_loaded,
+          :conditions   => conditions,
+          :n_conditions => conditions.size
         }
       end
     end
@@ -213,6 +214,7 @@ class Miho
 
     begin
       instance_eval(File.open(filename).read)
+      order_terms
       say_debug("Loaded #{filename}")
     rescue Exception => e
       miho_says("Error loading '#{filename}' #{e}")
@@ -236,8 +238,7 @@ class Miho
     else
       v = x.pop
       x.each do |k|
-        k = validate_key(k)
-        @memory[k] = v
+        @memory[validate_key(k)] = v.downcase
       end
     end
   end
@@ -246,6 +247,7 @@ class Miho
     @terms.each_with_index do |term, index|
       say_debug "%5d %s" % [index, term.inspect]
     end
+    ""
   end
 
   private
@@ -383,7 +385,11 @@ class Miho
   def order_terms
     @terms.sort! do |a,b|
       if a[:stars] == b[:stars]
-        a[:size] <=> b[:size]
+        if a[:size] == b[:size]
+          b[:n_conditions] <=> a[:n_conditions]
+        else
+          a[:size] <=> b[:size]
+        end
       else
         a[:stars] <=> b[:stars]
       end
