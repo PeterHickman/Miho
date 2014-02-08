@@ -434,7 +434,7 @@ learn "ARE YOU EMOTIONAL" do
 end
 
 learn "ARE YOU BORED" do
-	"A lot of people are bored these days. #{process "DO YOU FEEL".}"
+	"A lot of people are bored these days. #{process "DO YOU FEEL"}."
 end
 
 learn "ARE YOU JEALOUS" do
