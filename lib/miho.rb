@@ -250,6 +250,13 @@ class Miho
     ""
   end
 
+  # Rather than having to do 'get :fred' all over the place
+  # you can use the 'fred' as a method call and it will return
+  # whatever value was set (if any)
+  def method_missing(m, *args, &block)  
+    @memory[m]
+  end
+
   private
 
   def load_extras
