@@ -40,7 +40,6 @@ questions = {
 set :next_question, "start"
 
 learn "ETYPE", "WHAT IS MY PERSONALITY TYPE" do
-  etype = get :etype
 	process "PERSONALITY TYPE #{etype}"
 end
 
@@ -59,7 +58,6 @@ learn "I HAVE STANDARDS *" do
 end
 
 learn "PERSONALITY TEST QUESTION" do
-  next_question = get :next_question
   quiz = questions[next_question]
 
   set :question, quiz[:question]

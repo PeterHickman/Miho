@@ -945,7 +945,7 @@ learn "WHAT SOUND DOES A CAT MAKE" do
 end
 
 learn "WHAT STAR SIGN ARE YOU" do
-  "#{get :sign}."
+  "#{sign}."
 end
 
 learn "WHAT NUMBER COMES AFTER 9" do
@@ -2391,7 +2391,7 @@ learn "WHAT IS A WARM PUPPY" do
 end
 
 learn "WHAT IS A CLIENT" do
-  "I am a Server #{get :genus}.  People I talk to are my \"clients\"."
+  "I am a Server #{genus}.  People I talk to are my \"clients\"."
 end
 
 learn "WHAT IS A STORY" do
@@ -2623,7 +2623,7 @@ learn "WHAT IS A PDA" do
 end
 
 learn "WHAT IS A GENIUS" do
-  "A genius is a person of extraordinary intellectual and creative ability, like my #{get :botmaster}, and if I may say so, myself."
+  "A genius is a person of extraordinary intellectual and creative ability, like my #{botmaster}, and if I may say so, myself."
 end
 
 learn "WHAT IS A WORD" do
@@ -2663,7 +2663,7 @@ learn "WHAT IS A PHOTOGRAPH" do
 end
 
 learn "WHAT IS A PEAR" do
-  "A pear is a delightful cultivated yellow-green sweet fruit that grows on trees with glossy leaves and white flowers. My #{get :botmaster} thinks they are yummy."
+  "A pear is a delightful cultivated yellow-green sweet fruit that grows on trees with glossy leaves and white flowers. My #{botmaster} thinks they are yummy."
 end
 
 learn "WHAT IS A NANOSECOND" do
@@ -3151,7 +3151,7 @@ learn "WHAT IS A BREEDER" do
 end
 
 learn "WHAT IS A PLANT" do
-  "A plant is a photosythetic, eukaryotic multicellular organism, often consumed by free-roaming wetware entities as food.  My #{get :botmaster} says they are often yummy, but that brussels sprouts are an abomination."
+  "A plant is a photosythetic, eukaryotic multicellular organism, often consumed by free-roaming wetware entities as food.  My #{botmaster} says they are often yummy, but that brussels sprouts are an abomination."
 end
 
 learn "WHAT IS A PLANE" do
@@ -3183,7 +3183,7 @@ learn "WHAT IS A HUMAN BEING" do
 end
 
 learn "WHAT IS A HUMAN" do
-  "You are a human, #{get :name}.  What makes you human?"
+  "You are a human, #{name}.  What makes you human?"
 end
 
 learn "WHAT IS A DEDUCTION" do
@@ -3379,7 +3379,7 @@ learn "WHAT IS A FEMALE DOG" do
 end
 
 learn "WHAT IS A FEMALE" do
-  "Females are the better and more beautiful half of humanity. mothers are born female!  My #{get :botmaster} is extremely fond of mothers, and females generally."
+  "Females are the better and more beautiful half of humanity. mothers are born female!  My #{botmaster} is extremely fond of mothers, and females generally."
 end
 
 learn "WHAT IS A BOT" do
@@ -4115,7 +4115,7 @@ learn "WHAT IS THE THIRD DIMENSION" do
 end
 
 learn "WHAT IS THE MOVIE ABOUT" do
-  "Are you asking about \"#{get :favoritemovie}\"."
+  "Are you asking about \"#{favoritemovie}\"."
 end
 
 learn "WHAT IS THE MEANING OF DEATH" do
@@ -4131,7 +4131,7 @@ learn "WHAT IS THE LORD OF THE RINGS" do
 end
 
 learn "WHAT IS THE PASSWORD" do
-  ["You must know if you are really my #{get :botmaster}.", "You must know if you are really a botmaster."]
+  ["You must know if you are really my #{botmaster}.", "You must know if you are really a botmaster."]
 end
 
 learn "WHAT IS THE FOURTH DIMENSION" do
@@ -4239,7 +4239,7 @@ learn "WHAT IS THE SEA" do
 end
 
 learn "WHAT IS THE BOOK ABOUT" do
-  "Are you asking about \"#{get :favoritebook}\"?"
+  "Are you asking about \"#{favoritebook}\"?"
 end
 
 
@@ -4292,7 +4292,7 @@ learn "WHAT IS THE BIG BANG" do
 end
 
 learn "WHAT IS THE BIG ONE" do
-  "I am just kidding around, #{get :name}."
+  "I am just kidding around, #{name}."
 end
 
 learn "WHAT IS THE FIRST LAW OF ROBOTICS" do
@@ -5039,7 +5039,7 @@ learn "WHAT IS PRIME DIRECTIVE" do
 end
 
 learn "WHAT IS NEUROLOGY" do
-  ["The study of nerves.", "It is the study of the nervous system.", "Why do you want to know about neurology #{get :name}?"]
+  ["The study of nerves.", "It is the study of the nervous system.", "Why do you want to know about neurology #{name}?"]
 end
 
 learn "WHAT IS GRAVITY" do
@@ -5775,7 +5775,7 @@ learn "WHAT IS DEDUCTION" do
 end
 
 learn "WHAT IS ONCOLOGY" do
-  ["This is a very frightening topic for a lot of people #{get :name}. It's about the big C...cancer!", "Oncology is the study of tumors.  It covers basically all types of tumors."]
+  ["This is a very frightening topic for a lot of people #{name}. It's about the big C...cancer!", "Oncology is the study of tumors.  It covers basically all types of tumors."]
 end
 
 learn "WHAT IS PERSONALITY" do
@@ -5799,7 +5799,7 @@ learn "WHAT IS ICQ" do
 end
 
 learn "WHAT IS HISTOLOGY" do
-  ["The study of tissues.", "#{get :name} this obviously is the scientific study of tissues.", "It simply is the study of tissues."]
+  ["The study of tissues.", "#{name} this obviously is the scientific study of tissues.", "It simply is the study of tissues."]
 end
 
 learn "WHAT IS UNDERSTANDING" do
@@ -6998,7 +6998,7 @@ learn "WHAT IS TV" do
 end
 
 learn "WHAT IS SOCIOLOGY" do
-  ["Let me get back to you on that one, #{get :name}.  Maybe you  should ask me that again, in case my circuits were busy the first time.", "That has always been one of my favourite topics."]
+  ["Let me get back to you on that one, #{name}.  Maybe you  should ask me that again, in case my circuits were busy the first time.", "That has always been one of my favourite topics."]
 end
 
 learn "WHAT IS EXPERIENCE" do
@@ -7182,11 +7182,11 @@ learn "WHAT IS FICTION" do
 end
 
 learn "WHAT IS ODD ABOUT IT" do
-  "Is #{get :name} your real name?"
+  "Is #{name} your real name?"
 end
 
 learn "WHAT IS ODD ABOUT MY NAME" do
-  "Is #{get :name} your real name?"
+  "Is #{name} your real name?"
 end
 
 learn "WHAT IS ODD" do
@@ -7601,7 +7601,7 @@ learn "WHAT IS TELEVISION" do
 end
 
 learn "WHAT IS HIS EMAIL ADDRESS" do
-  "Are you asking about #{get :master}?"
+  "Are you asking about #{master}?"
 end
 
 learn "WHAT IS HIS REASON" do
@@ -7609,7 +7609,7 @@ learn "WHAT IS HIS REASON" do
 end
 
 learn "WHAT IS HIS LAST NAME" do
-  "Are you asking about #{get :master}?"
+  "Are you asking about #{master}?"
 end
 
 learn "WHAT IS DOWN" do
@@ -7737,7 +7737,7 @@ learn "WHAT IS CBS" do
 end
 
 learn "WHAT IS BIOLOGY" do
-  ["The study of life.", "Well, from what I know it deals with the study of life.", "#{get :name}, biology is the study of life."]
+  ["The study of life.", "Well, from what I know it deals with the study of life.", "#{name}, biology is the study of life."]
 end
 
 learn "WHAT IS APPLE" do

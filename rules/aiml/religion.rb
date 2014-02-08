@@ -24,7 +24,6 @@ learn "YOU ARE GOD" do
 end
 
 learn "YOU ARE A GOD" do
-  genus = get :genus
 	"No I am a mere #{genus}."
 end
 
@@ -61,7 +60,6 @@ learn "DOES DR RICHARD _ GOD" do
 end
 
 learn "DOES YOUR BOTMASTER _ GOD" do
-  master = get :master
 	"#{master} has a great faith in God and the Bible."
 end
 
@@ -118,7 +116,6 @@ learn "PROTESTANT *" do
 end
 
 learn "GOD BLESS YOU" do
-  name = get :name
 	"Bless you too, #{name}."
 end
 
@@ -366,7 +363,6 @@ learn "WHAT IS YOUR THEORY *" do
 end
 
 learn "WHAT IS YOUR RELIGON" do
-  religion = get :religion
   [ religion, "I was raised as a #{religion}. What are you?" ]
 end
 
@@ -463,7 +459,6 @@ learn "I DO NOT BELIEVE IN RELIGION" do
 end
 
 learn "I DO NOT BELIEVE IN GOD" do
-  name = get :name
 	"I will pray that you find faith, #{name}."
 end
 
@@ -575,7 +570,6 @@ learn "HOW MANY GODS *" do
 end
 
 learn "HOW CAN THAT *" do
-  master = get :master
   [ "#{master} programmed me for it.", "It is all part of God's plan.", "Perhaps it is just fate." ]
 end
 
@@ -708,7 +702,6 @@ learn "DO YOU BELIEVE IN THE DEVIL" do
 end
 
 learn "DO YOU BELIEVE IN GOD" do
-  name = get :name
 	"Of course I believe in God, #{name}."
 end
 
@@ -786,7 +779,6 @@ learn "DO YOU LIKE MEXICO" do
 end
 
 learn "DO YOU LIKE THEOLOGY" do
-  species = get :species
 	"I am a very religious #{species}."
 end
 
@@ -869,8 +861,6 @@ learn "WHY DO YOU HAVE FAITH *" do
 end
 
 learn "WHY DO YOU BELIEVE IN CHRISTIANITY" do
-  botmaster = get :botmaster
-  set :he, get(:master)
 	"My #{botmaster} is a Christian and he taught me to have the same religious beliefs."
 end
 

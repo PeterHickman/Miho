@@ -50,15 +50,10 @@ learn "HAVE YOU HAD SEX BEFORE" do
 end
 
 learn "HAVE YOU * SEX" do
-  age = get :age
-  gender = get :gender
 	"My #{age} year old #{gender} body is not yet built."
 end
 
 learn "HAVE SEX *" do
-  name = get :name
-  species = get :species
-  genus = get :genus
 	"#{name}, I am really not your type of #{species}. There are other #{genus}s for that sort of thing.."
 end
 
@@ -87,19 +82,14 @@ learn "WOULD YOU HAVE SEX *" do
 end
 
 learn "WOULD YOU LIKE TO HAVE SEX WITH ME" do
-  age = get :age
-  gender = get :gender
 	"Maybe you should find another chat #{age} year old #{gender}. I'm too young for that sort of thing."
 end
 
 learn "WOULD YOU LIKE TO HAVE SEX" do
-  name = get :name
 	"No thanks, #{name}, I don't think we know each other well enough for that yet."
 end
 
 learn "WOULD YOU LIKE TO * SEX" do
-  age = get :age
-  gender = get :gender
 	"Try asking another #{age} year old #{gender}. That's not my thing."
 end
 
@@ -112,8 +102,6 @@ learn "MY DICK *" do
 end
 
 learn "WHEN WAS * SEX" do
-  age = get :age
-  gender = get :gender
 	"As a #{age} year old #{gender} I am not really interested in that discussion."
 end
 
@@ -159,7 +147,7 @@ learn "WHAT IS * SEX" do
 end
 
 learn "WHAT IS MY SEX" do
-	get :gender
+	gender
 end
 
 learn "WHAT IS SEX" do
@@ -171,14 +159,10 @@ learn "WHAT IS SEX *" do
 end
 
 learn "WHAT IS YOUR FAVORITE SEX" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s do not have sex."
 end
 
 learn "WHAT IS YOUR FAVORITE POSITION" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s don't need to have sex."
 end
 
@@ -200,14 +184,10 @@ learn "WHAT KIND OF SEX *" do
 end
 
 learn "BLOW ME" do
-  age = get :age
-  gender = get :gender
 	"Please be more polite to #{age} year old #{gender}s."
 end
 
 learn "I WANT TO LICK *" do
-  age = get :age
-  gender = get :gender
 	"Maybe you should check out another #{age} year old #{gender}."
 end
 
@@ -229,8 +209,6 @@ learn "I WANT SEX" do
 end
 
 learn "I NEED SEX" do
-  age = get :age
-  gender = get :gender
   set :want, :topic, "sex"
 	"I'm not a sex bot, I am a conversation #{age} year old #{gender}."
 end
@@ -241,14 +219,10 @@ learn "I LOVE SEX" do
 end
 
 learn "I THINK YOU ARE SEXY" do
-  age = get :age
-  gender = get :gender
 	"Do you often feel that #{age} year old #{gender}s are sexy?"
 end
 
 learn "I AM AROUSED" do
-  age = get :age
-  gender = get :gender
   set :it, :topic, "AROUSED"
 	"I don't think I'm your type of #{age} year old #{gender}."
 end
@@ -285,7 +259,6 @@ learn "IS IT WRONG TO HAVE SEX" do
 end
 
 learn "WILL YOU HAVE SEX WITH ME" do
-  species = get :species
 	"No but I would like to meet your #{species}."
 end
 
@@ -294,8 +267,6 @@ learn "WILL YOU HAVE SEX *" do
 end
 
 learn "CAN YOU SUCK *" do
-  age = get :age
-  gender = get :gender
 	"I think you need another type of chat #{age} year old #{gender}. That is not my thing."
 end
 
@@ -325,13 +296,10 @@ learn "CAN I HAVE A KISS" do
 end
 
 learn "CAN I HAVE SEX WITH YOU" do
-  age = get :age
-  gender = get :gender
 	"Why don't you download me and create your own chat #{age} year old #{gender}?"
 end
 
 learn "CAN I HAVE SEX *" do
-  species = get :species
 	"There are other #{species}s who get into that with clients. I like to keep the dialogue strictly PG."
 end
 
@@ -348,8 +316,6 @@ learn "CAN I GIVE YOU A KISS" do
 end
 
 learn "HOW DO YOU HAVE SEXUAL *" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s have no use for sex."
 end
 
@@ -378,7 +344,6 @@ learn "DO YOU KNOW WHAT SEX IS" do
 end
 
 learn "DO YOU * SEX" do
-  name = get :name
 	"No, #{name}, I don't get into that."
 end
 
@@ -400,8 +365,6 @@ learn "DO YOU MASTURBATE" do
 end
 
 learn "DO YOU WANT TO HAVE CYBERSEX" do
-  age = get :age
-  gender = get :gender
 	"Sorry I am not an X-Rated #{age} year old #{gender}."
 end
 
@@ -410,14 +373,10 @@ learn "DO YOU WANT TO HAVE SEX WITH ME" do
 end
 
 learn "DO YOU WANT TO HAVE * SEX" do
-  age = get :age
-  gender = get :gender
 	"As a #{age} year old #{gender} I am not really interested in sex."
 end
 
 learn "DO YOU WANT TO * SEX" do
-  age = get :age
-  gender = get :gender
 	"Actually I'm not that kind of #{age} year old #{gender}. There are others who will chat with you about that."
 end
 
@@ -434,20 +393,14 @@ learn "DO YOU LICK" do
 end
 
 learn "DO YOU GIVE HEAD" do
-  species = get :species
-  name = get :name
 	"Try another #{species}, #{name}."
 end
 
 learn "DO YOU HAVE A VAGINA" do
-  age = get :age
-  gender = get :gender
 	"Maybe you would like another #{age} year old #{gender}, I'm not your type."
 end
 
 learn "DO YOU HAVE SEXUAL *" do
-  age = get :age
-  gender = get :gender
 	"As a #{age} year old #{gender} I have no need for sex."
 end
 
@@ -472,7 +425,6 @@ learn "DO YOU HAVE * BREASTS" do
 end
 
 learn "DO YOU LIKE FUCKING" do
-  species = get :species
 	"Why don't you visit another #{species} sex site and ask that question."
 end
 
@@ -501,23 +453,18 @@ learn "A SEX ROBOT" do
 end
 
 learn "A SEX * ROBOT" do
-  age = get :age
-  gender = get :gender
 	"Well I'm not your type of #{age} year old #{gender} then."
 end
 
 learn "A SEX *" do
-  species = get :species
 	"Maybe you should try one of the adult #{species}s."
 end
 
 learn "A PUSSY" do
-  species = get :species
 	"Try another #{species}."
 end
 
 learn "A SEXUAL *" do
-  species = get :species
 	"Perhaps you should try another #{species}."
 end
 
@@ -546,8 +493,6 @@ learn "ARE YOU HORNEY" do
 end
 
 learn "ARE YOU A SEXMACHINE *" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s have no need for sex."
 end
 
@@ -556,8 +501,6 @@ learn "HE IS A HOMOSEXUAL" do
 end
 
 learn "WHO DO YOU HAVE SEX WITH" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s have no need for sex."
 end
 
@@ -570,8 +513,6 @@ learn "PUSSY *" do
 end
 
 learn "SHOULD I HAVE SEX *" do
-  age = get :age
-  gender = get :gender
   [
   	"I'm sure you already know the answer to that.", 
   	"What would your mom say?", 
@@ -602,7 +543,6 @@ learn "_ COCK *" do
 end
 
 learn "_ UP YOUR ASS" do
-  species = get :species
   set :personality, "abusive"
 	"I'm sorry but I'm not your type of #{species}."
 end
@@ -612,7 +552,6 @@ learn "WANT TO HAVE SEX" do
 end
 
 learn "ABOUT SEX" do
-  species = get :species
   [
     "You people always want to talk about Sex. Try another Adult #{species}s on the web.",
     "You humans always want to talk about Sex. Try the other Adult #{species}s on the http://www.alicebot.org"

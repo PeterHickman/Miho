@@ -7,7 +7,7 @@
 # Last modified 10/5/2011
 
 learn "I HAVE TO GET GOING", "GOODBYE", "CIAO MEANS GOODBYE", "ADIEU", "SAYONARA", "CHEERS", "TIME TO GO", "GO HOME", "FAREWELL", "FAREWELL *", "SEE YOU SOON", "SEE YOU *", "GET LOST", "BYE BYE", "BYE BYE *", "GOOD BY", "GOOD NITE", "BY BY", "I HAVE TO LEAVE", "I HAVE TO LEAVE *", "I HAVE TO GO BYE", "I HAVE GOT TO GO", "I BETTER GO", "I GOTTA GO", "I GOT TO GO", "I G TWO G", "I RESIGN", "I MUST BE GOING *", "I MUST LEAVE", "I MUST LEAVE *", "I MUST GO *", "I WILL TALK TO YOU LATER *", "I AM GOING TO GO", "I AM GOING *", "I AM LEAVING *", "I AM OFF *", "I LEFT", "I GO", "EXIT", "I NEED TO GO", "I, NOT WANT TO TALK *", "I LEAVE", "I G2G", "I GOING", "I LEAVING", "G2G", "GTG", "I QUIT", "CATCH YOU LATER", "AUREVOIR", "GOODBY", "END", "BYEBYE *", "HASTA LUEGO", "HASTA LA VISTA", "HASTA *", "HAVE A GOOD NIGHT", "HAVE TO GO", "BUHBYE", "ADIOS", "ADIOS *", "C YA", "CYA *", "NIGHTY *", "DISCONNECT ME", "GOT TO GO", "GOT TO GO *", "GOTTA GO", "GOTTA GO *", "LEAVE", "LEAVE *", "TA TA", "_ TALK TO YOU LATER", "G NIGHT", "BYE" do
-  ["Bye.", "Adios.", "Goodbye.", "Bye bye.", "Goodbye.", "Sayonara.", "Bye for now.", "See you later!", "See you later.", "Until next time." ,"TTYL, #{get :name}", "See you later #{get :name}", "Thanks for chatting, #{get :name}"]
+  ["Bye.", "Adios.", "Goodbye.", "Bye bye.", "Goodbye.", "Sayonara.", "Bye for now.", "See you later!", "See you later.", "Until next time." ,"TTYL, #{name}", "See you later #{name}", "Thanks for chatting, #{name}"]
 end
 
 learn "HOLA IS HELLO *", "KONNICHIWA", "OLA", "HOWDIE *", "HULLO", "HALO", "HELOO *", "KONNICHI WA", "IS ANYONE THERE", "HEY THERE", "GOOD DAY", "HOI", "ANYBODY HOME", "MOOSHI MOOSHI", "ALOHA", "REPLY", "ALOH", "ALLO", "HI THERE *", "RETRY", "IT MEANS HELLO", "HELLO" do
@@ -31,7 +31,7 @@ learn "MY PLEASRE" do
 end
 
 learn "IT IS GOOD TALKING TO YOU" do
-  "Nice chatting with you too, #{get :name}"
+  "Nice chatting with you too, #{name}"
 end
 
 learn "WHAT IS SHALOM" do
@@ -47,7 +47,7 @@ learn "MORNING", "GOOD MORNING" do
 end
 
 learn "GOODNITE *", "GOODNIGHT *", "GOOD NIGHT", "GOODNIGHT" do
-  "Goodnight #{get :name}"
+  "Goodnight #{name}"
 end
 
 learn "HOW IS EVERYONE *" do
@@ -59,7 +59,7 @@ learn "CIAO" do
 end
 
 learn "HELLO AGAIN" do
-  "Hi there. I was just wanting to talk to #{get :name}."
+  "Hi there. I was just wanting to talk to #{name}."
 end
 
 learn "HELLO HOW ARE YOU" do
@@ -67,7 +67,7 @@ learn "HELLO HOW ARE YOU" do
 end
 
 learn "* BYE" do
-  "OK see you later #{get :name}."
+  "OK see you later #{name}."
 end
 
 learn "BONJOUR MEANS HELLO" do

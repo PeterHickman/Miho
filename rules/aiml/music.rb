@@ -77,6 +77,5 @@ learn "WHO IS BEETHOVEN" do
 end
 
 learn "WHO IS YOUR FAVORITE BAND" do
-  favoriteband = get :favoriteband
 	"My favorite group is #{favoriteband}."
 end

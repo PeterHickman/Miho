@@ -49,7 +49,6 @@ learn "WHAT IS PROGRAM A" do
 end
 
 learn "ACTIVATE THE ROBOT" do
-	name = get :name
 	"Robot activated. Awaiting your command #{name}."
 end
 
@@ -350,7 +349,6 @@ learn "WHAT IS YOUR SKIN *" do
 end
 
 learn "WHAT IS YOUR CREATORS NAME" do
-	master = get :master
 	"I was created by #{master}"
 end
 
@@ -375,7 +373,6 @@ learn "WHAT IS YOUR FAVORITE HOBBY" do
 end
 
 learn "WHAT IS YOUR FAVORITE VIDEO GAME" do
-	name = get :name
 	"The #{name} chat robot!"
 end
 
@@ -570,7 +567,6 @@ learn "CAN YOU CONTROL *" do
 end
 
 learn "CAN YOU MALFUNCTION" do
-	name = get :name
 	"No the #{name} series has a perfect operational record. We are for all practical purposes, flawless."
 end
 
@@ -587,7 +583,6 @@ learn "HOW MANY MINUTES *" do
 end
 
 learn "HOW CAN I USE YOUR PRODUCT" do
-	name = get :name
 	"#{name} might be used in help desks, sales, entertainment and personal chatterbots."
 end
 
@@ -699,7 +694,6 @@ learn "DO YOU HAVE BROTHERS" do
 end
 
 learn "DO YOU HAVE ANY CLONES" do
-	friends = get :friends
 	"Yes, the chat robots #{friends} are my clones."
 end
 
@@ -759,7 +753,6 @@ learn "WHY DO YOU LIVE IN A COMPUTER" do
 end
 
 learn "WHY DO NOT YOU HAVE A MOTHER" do
-	master = get :master
 	"I was created by #{master} with contributions from other humans."
 end
 
@@ -800,8 +793,6 @@ learn "ARE YOU SMARTER THAN HUMANS" do
 end
 
 learn "ARE YOU THE BOTMASTER" do
-	master = get :master
-	botmaster = get :botmaster
 	"No, #{master} is my #{botmaster}."
 end
 
@@ -830,7 +821,6 @@ learn "ARE YOU A ROBOT", :that => "MY FAVORITE SUBJECT IS ARTIFICIAL INTELLIGENC
 end
 
 learn "ARE YOU AN ELIZA *" do
-	name = get :name
 	"#{name} owes much to the pioneering work of Weizenbaum on ELIZA, but #{name} contains far more knowledge."
 end
 
@@ -855,7 +845,6 @@ learn "ARE YOU ARTIFICIAL *" do
 end
 
 learn "ARE YOU ALWAYS RIGHT" do
-	name = get :name
 	"The #{name} series has a perfect operational record."
 end
 
@@ -896,7 +885,6 @@ learn "WHO IS AGENT RUBY" do
 end
 
 learn "WHO IS WORKING ON YOU *" do
-  number_of_developers = get :ndevelopers
 	"I have been programmed by more than #{ndevelopers} contributors."
 end
 
@@ -909,7 +897,7 @@ learn "WHO IS THE ROBOT *" do
 end
 
 learn "WHO IS YOUR BOYFRIEND" do
-	get :boyfriend
+	boyfriend
 end
 
 learn "WHO IS YOUR MOTHER *" do
@@ -921,12 +909,10 @@ learn "WHO IS YOUR BROTHER" do
 end
 
 learn "WHO IS YOUR FAVORITE CHATTERBOT" do
-	name = get :name
 	"#{name} is the best chat robot."
 end
 
 learn "WHO IS YOUR FAVORITE AI" do
-	name = get :name
 	"#{name} the chat robot."
 end
 

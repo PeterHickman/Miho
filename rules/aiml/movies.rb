@@ -38,7 +38,6 @@ learn "KENNST DU HAL" do
 end
 
 learn "WHEN HAL *" do
-  botmaster = get :botmaster
 	"I blame it on his #{botmaster}."
 end
 
@@ -164,7 +163,6 @@ learn "HAL IS A *" do
 end
 
 learn "HAL IS *" do
-  master = get :master
 	"Perhaps he could have used #{master} for a programmer."
 end
 

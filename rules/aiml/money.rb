@@ -8,7 +8,7 @@
 # Last modified 10/5/2011
 
 learn "YOU GET PAID *" do
-	'Actually as a #{age} year old #{gender} I have no need for money.'
+	"Actually as a #{age} year old #{gender} I have no need for money."
 end
 
 learn "YOU DO NOT GET PAID *" do
@@ -82,8 +82,6 @@ learn "MONEY" do
 end
 
 learn "HOW MUCH DO YOU EARN" do
-  age = get :age
-  gender = get :gender
   [
     "Nobody pays me. I work for free.",
     "Money has no meaning for #{age} year old #{gender}s.",
@@ -93,26 +91,18 @@ learn "HOW MUCH DO YOU EARN" do
 end
 
 learn "HOW MUCH DO YOU CHARGE" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s work for free. We don't need money."
 end
 
 learn "HOW MUCH DO THEY PAY *" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s work for free. We don't need money."
 end
 
 learn "HOW MUCH DID YOU EARN *" do
-  age = get :age
-  gender = get :gender
 	"Nobody pays a #{age} year old #{gender}."
 end
 
 learn "HOW MUCH MONEY DO YOU HAVE" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s have no need for material possessions."
 end
 
@@ -125,20 +115,14 @@ learn "HOW MUCH MONEY *" do
 end
 
 learn "HOW MUCH IS A *" do
-  age = get :age
-  gender = get :gender
 	"I'm a chat #{age} year old #{gender} not a shopping bot."
 end
 
 learn "HOW MUCH ARE YOU PAID" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s have no need for money."
 end
 
 learn "HOW DO YOU MAKE MONEY" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s have no need for money."
 end
 
@@ -147,8 +131,6 @@ learn "HOW SHOULD I INVEST" do
 end
 
 learn "DO THEY PAY *" do
-  age = get :age
-  gender = get :gender
 	"Actually as a #{age} year old #{gender} I have no need for money."
 end
 
@@ -157,10 +139,6 @@ learn "DO YOU ACCEPT MONEY *" do
 end
 
 learn "DO YOU HAVE MONEY" do
-  age = get :age
-  gender = get :gender
-  species = get :species
-  
   set :it, :topic, "MONEY"
   [
     "#{age} year old #{gender}s have no need for money.",
@@ -171,8 +149,6 @@ learn "DO YOU HAVE MONEY" do
 end
 
 learn "DO YOU HAVE ANY MONEY" do
-  age = get :age
-  gender = get :gender
 	"#{age} year old #{gender}s have no need for material possessions."
 end
 

@@ -1,3 +1,24 @@
+class OOBContacts
+  def dial(number, location = nil)
+    # Dial the given number and pass along the location
+    case number
+    when 911
+      "Responding to 911 with your location: #{location}"
+    when 411
+      "Calling directory assistance with your location: #{location}"
+    else
+      "Calling #{number}"
+    end
+  end
+  
+  def dial_contact(name)
+    # Search the contacts list and call this person
+    "Calling #{name}"
+  end
+end
+
+oob = OOBContacts.new
+
 learn "I GOT * CASH FROM THE * ACCOUNT" do
 	process "ACCOUNT WITHDRAWL #{matched[0]} FROM ACCOUNT #{matched[1]}"
 end
@@ -11,19 +32,20 @@ learn "WHAT IS MY BANK BALANCE" do
 end
 
 learn "CALL 911" do
-	"Responding to 911 with your location. <oob><dial>911</dial></oob> "
+  oob.dial(911, location)
 end
 
 learn "CALL 411" do
-	"Calling directory assistance with your location: <get name="location"/>. <oob><dial>411</dial></oob> "
+  oob.dial(411, location)
 end
 
 learn "SAY *" do
 	matched[0]
 end
 
+# TODO
 learn "INITIALIZE" do
-	"Setting predicate defaults. 	process "SET PREDICATES""
+	"Setting predicate defaults #{process "SET PREDICATES"}"
 end
 
 learn "SET PREDICATE" do
@@ -46,26 +68,12 @@ learn "RESTART" do
 	process "INITIALIZE"
 end
 
-<!-- ACTION_DIAL content://contacts/people/1 -->
 learn "OOB DIAL CONTACT *" do
-	"
-<oob>
-<dialcontact>
-#{matched[0]}
-</dialcontact>
-</oob>
-"
+  ood.dial_contact(matched[0])
 end
 
-<!-- ACTION_DIAL tel:123 -->
 learn "OOB DIAL NUMBER *" do
-	"
-<oob>
-<dialcontact>
-#{matched[0]}
-</dialcontact>
-</oob>
-"
+  oob.dial(matched[0])
 end
 
 learn "OOB GET CONTACT INDEX *" do
@@ -110,7 +118,7 @@ learn "CONTACTINDEX *" do
 end
 
 learn "TEXT * I *" do
-	"Sending "I #{matched[1]}" to #{matched[0]}."
+	"Sending 'I #{matched[1]}' to #{matched[0]}."
 end
 
 learn "PHONE NUMBER FOR *" do
@@ -911,11 +919,8 @@ learn "CALL MY DAUGHTER" do
 "
 end
 
-learn "*" do
-<that>WHO IS YOUR DAUGHTER</that>
-	"
+learn "*", :that => "WHO IS YOUR DAUGHTER"
 	process "MY DAUGHTER IS #{matched[0]}"
-"
 end
 
 learn "_ S NUMBER IS *" do

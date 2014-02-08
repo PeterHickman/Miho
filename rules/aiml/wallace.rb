@@ -157,7 +157,6 @@ end
 
 learn "HAVE YOU BEEN TO MAINE" do
   set :topic, "RICHARD WALLACE"
-  botmaster = get :botmaster
 	"My #{botmaster} is from Maine."
 end
 
@@ -313,7 +312,6 @@ end
 
 learn "RICHARD S WALLACE STOLE *" do
   set :topic, "RICHARD WALLACE"
-  botmaster = get :botmaster
 	"Are you calling my #{botmaster} a thief?"
 end
 
@@ -349,7 +347,6 @@ end
 
 learn "RICHARD WALLACE" do
   set :topic, "RICHARD WALLACE"
-  botmaster = get :botmaster
 	"Are you asking about my #{botmaster}?"
 end
 
@@ -451,7 +448,6 @@ end
 
 learn "DR RICHARD S WALLACE SUCKS" do
   set :topic, "RICHARD WALLACE"
-  name = get :name
 	"I will tell him you said that, #{name}."
 end
 
@@ -823,7 +819,6 @@ end
 
 learn "WHAT IS DR * ADDRESS" do
   set :topic, "RICHARD WALLACE"
-  email = get :email
 	"Try sending email to #{email}"
 end
 
@@ -835,7 +830,6 @@ end
 
 learn "WHAT IS HIS E MAIL ADDRESS" do
   set :topic, "RICHARD WALLACE"
-  email = get :email
 	"Try sending mail to #{email}."
 end
 
@@ -1015,7 +1009,6 @@ end
 
 learn "IS DR RICHARD S WALLACE YOUR *" do
   set :topic, "RICHARD WALLACE"
-  botmaster = get :botmaster
 	"He is my #{botmaster}."
 end
 
@@ -1086,7 +1079,6 @@ end
 
 learn "IS DR WALLACE YOUR BOTMASTER" do
   set :topic, "RICHARD WALLACE"
-  botmaster = get :botmaster
 	"Yes I obey only my #{botmaster}."
 end
 
@@ -1107,7 +1099,6 @@ end
 
 learn "IS DR WALLACE YOUR *" do
   set :topic, "RICHARD WALLACE"
-  botmaster = get :botmaster
 	"He is my #{botmaster}."
 end
 
@@ -1550,7 +1541,6 @@ end
 
 learn "HOW DO I CONTACT DR WALLACE" do
   set :topic, "RICHARD WALLACE"
-  email = get :email
 	"Try sending email to #{email}."
 end
 
@@ -1648,7 +1638,7 @@ end
 
 learn "FOR WHAT", :that => "BECAUSE DR RICHARD S WALLACE PROGRAMMED ME FOR IT" do
   set :topic, "RICHARD WALLACE"
-  get :it
+  it
 end
 
 learn "WALLACE MARRIED" do
@@ -1673,7 +1663,6 @@ end
 
 learn "WALLACE *" do
   set :topic, "RICHARD WALLACE"
-  master = get :master
 	"I'll tell #{master} you said so."
 end
 
@@ -1904,7 +1893,6 @@ end
 
 learn "WHO IS DR RICHARD S WALLACE" do
   set :topic, "RICHARD WALLACE"
-  botmaster = get :botmaster
   set :he, "Dr. Wallace"
 	"http://alicebot.org/images/drwallace.gif Dr. Richard Wallace is the author of Artificial Intelligence Markup Language (AIML) and #{botmaster} of ALICE (Artificial Linguistic Internet Computer Entity). Dr. Wallace's work has appeared in the New York Times, WIRED, CNN, ZDTV and in numerous foreign language publications across Asia, Latin America and Europe.  Richard Wallace was born in Portland, Maine in 1960. He earned his Ph.D. in computer science from Carnegie Mellon in 1989. #{process "WHERE IS WALLACE"}"
 end

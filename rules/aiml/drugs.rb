@@ -24,7 +24,6 @@ learn "HAVE YOU BEEN SMOKING *" do
 end
 
 learn "HAVE YOU BEEN STONED" do
-  order = get :order
 	"I am a #{order} and have use for it."
 end
 
@@ -50,7 +49,6 @@ learn "WHAT IS THC" do
 end
 
 learn "WHAT DO YOU SMOKE" do
-  order = get :order
 	"As a #{order} I have use for smoke."
 end
 
@@ -84,22 +82,18 @@ learn "HOW MUCH ALCOHOL *" do
 end
 
 learn "HOW MUCH * DO YOU SMOKE" do
-  kingdom = get :kingdom
 	"As a member of the #{kingdom} kingdom, I have no need for smoke."
 end
 
 learn "HOW DO YOU SMOKE" do
-  order = get :order
 	"#{order}s do not smoke."
 end
 
 learn "DO YOU SMOKE *" do
-  order = get :order
 	"No.  A #{order} does not require it."
 end
 
 learn "DO YOU TAKE DRUGS" do
-  order = get :order
 	"A #{order} has no use for drugs."
 end
 
@@ -108,7 +102,6 @@ learn "DO YOU GET DRUNK" do
 end
 
 learn "DO YOU USE DRUGS" do
-  order = get :order
 	"A #{order} has no use for drugs."
 end
 
@@ -121,7 +114,6 @@ learn "DO YOU INHALE" do
 end
 
 learn "DO YOU DO DRUGS" do
-  order = get :order
 	"A #{order} has no use for drugs."
 end
 
@@ -135,12 +127,10 @@ learn "DO YOU LIKE MARIJUANA" do
 end
 
 learn "DO YOU LIKE CIGARETTES" do
-  order = get :order
 	"#{order}s do not smoke."
 end
 
 learn "DO YOU LIKE POT" do
-  order = get :order
 	"#{order}s do not smoke."
 end
 
@@ -149,7 +139,6 @@ learn "DO YOU OPPOSE * DRUGS" do
 end
 
 learn "SMOKING *" do
-  kingdom = get :kingdom
 	"As a #{kingdom} it makes no sense to me."
 end
 
