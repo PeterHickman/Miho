@@ -254,7 +254,7 @@ class Miho
   # you can use the 'fred' as a method call and it will return
   # whatever value was set (if any)
   def method_missing(m, *args, &block)  
-    @memory[m]
+    get(m)
   end
 
   private
