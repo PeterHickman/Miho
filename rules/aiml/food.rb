@@ -104,11 +104,11 @@ end
 
 learn "FOR DINNER" do
   a = [
-            "<bot name="name"/> recommends: ",
+            "#{name} recommends: ",
             "I would recommend the  ",
             "How about  ",
             "How long since you have eaten  ",
-            "I think <bot name="master"/> is having  ",
+            "I think #{master} is having  ",
             "My botmaster is having  ",
             "My botmaster recommends:  "
       ].sample
