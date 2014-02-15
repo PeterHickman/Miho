@@ -1,42 +1,51 @@
 #!/usr/bin/env ruby
 
+silent = false
+
 def set(*args)
 end
 
 ARGV.each do |filename|
-  puts "Processing #{filename}"
+  if filename == "--quiet"
+    silent = true
+  else
+    errors = false
 
-  $rule_number = 0
-  $patterns = Hash.new
+    $rule_number = 0
+    $patterns = Hash.new
 
-  def learn(*patterns, &block)
-    $rule_number += 1
+    def learn(*patterns, &block)
+      $rule_number += 1
 
-    conditions = patterns.last.class == Hash ? patterns.pop : {}
+      conditions = patterns.last.class == Hash ? patterns.pop : {}
 
-    patterns.map{|x| x.downcase.strip.gsub(/_/, "*")}.each do |pattern|
-      unless $patterns.has_key?(pattern)
-        $patterns[pattern] = Hash.new
-      end
-
-      if $patterns.has_key?(pattern)
-        $patterns[pattern].each do |k, v|
-          if conditions == v
-            puts "Rule #{$rule_number} duplicates #{$patterns[pattern][:number]} with '#{pattern}'"
-          end
+      patterns.map{|x| x.downcase.strip.gsub(/_/, "*")}.each do |pattern|
+        unless $patterns.has_key?(pattern)
+          $patterns[pattern] = Hash.new
         end
-      else
-        $patterns[pattern][$rule_number] = conditions
+
+        if $patterns.has_key?(pattern)
+          $patterns[pattern].each do |k, v|
+            if conditions == v
+              puts "Rule #{$rule_number} duplicates #{$patterns[pattern][:number]} with '#{pattern}'"
+            end
+          end
+        else
+          $patterns[pattern][$rule_number] = conditions
+        end
       end
     end
-  end
 
-  begin
-    eval(File.open(filename).read)
-  rescue Exception => e
-    puts "Error found at #{$rule_number}: #{e}"
-  end
+    begin
+      eval(File.open(filename).read)
+    rescue Exception => e
+      puts "Error found at #{$rule_number}: #{e}"
+      errors = true
+    end
 
-  puts "There are #{$patterns.size} unique patterns for #{$rule_number} rules"
-  puts
+    if errors or silent == false
+      puts "There are #{$patterns.size} unique patterns for #{$rule_number} rules in #{filename}"
+      puts
+    end
+  end
 end
