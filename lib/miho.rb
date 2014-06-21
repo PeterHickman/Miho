@@ -99,6 +99,7 @@ class Miho
     @debug = false
     @extras = Hash.new
     @matched_pattern = nil
+    @contexts = [Hash.new]
 
     @last_lines = Array.new
 
@@ -109,7 +110,17 @@ class Miho
 
   def learn(*terms, &block)
     conditions = Hash.new
-    
+
+    @contexts.each do |context|
+      context.each do |k,v|
+        if v == nil
+          conditions.delete(validate_key(k))
+        else
+          conditions[validate_key(k)] = v.downcase
+        end
+      end
+    end
+
     if terms.last.class == Hash
       x = terms.pop
       x.each do |k, v|
@@ -136,6 +147,16 @@ class Miho
         }
       end
     end
+  end
+
+  def context(*terms, &block)
+    say_debug "Adding context: #{terms.inspect}"
+
+    @contexts << terms.first
+    yield
+    @contexts.pop
+
+    say_debug "Removing context: #{terms.inspect}"
   end
 
   def quit
@@ -237,8 +258,15 @@ class Miho
       puts "set requires at least 2 arguments"
     else
       v = x.pop
-      x.each do |k|
-        @memory[validate_key(k)] = v.downcase
+      if v == nil
+        x.each do |k|
+          @memory.delete(k)
+        end
+      else
+        v = v.downcase
+        x.each do |k|
+          @memory[validate_key(k)] = v
+        end
       end
     end
   end
