@@ -58,24 +58,24 @@ end
 # [You] cat
 #
 # :topic has now been set to 'cat' so when we run the 'speak' rule the one that is
-# more specific will bet run and the others ignored
-
+# more specific will be run and the others ignored
+#
 # [Miho] You like cats then
 # [You] speak
 # [Miho] Meow
 # [You] dog
-
+#
 # Now we set :topic to 'dog' and only the dog rules are used
-
+#
 # [Miho] You like dogs then
 # [You] speak
 # [Miho] Woof
 # [You] fetch
 # [Miho] At once master!
 # [You] nothing
-
+#
 # This deletes the values of :topic and we are in the same state as we started
-
+#
 # [Miho] Reset
 # [You] fetch
 # [Miho] Get it youself

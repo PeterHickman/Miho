@@ -51,8 +51,8 @@ learn "fetch" do
 end
 
 # Test it. It will behave exactly the same as the previous rules
-
-# Note that contexts can have as many sets of attributes as you want
+#
+# Note that contexts can have as many attributes as you want
 # 
 # context :this => '1', :that => '42', :other => 'cheese' do
 #   ...
@@ -69,4 +69,3 @@ end
 #     end
 #   end
 # end
-# 
