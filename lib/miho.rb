@@ -124,7 +124,11 @@ class Miho
     if terms.last.class == Hash
       x = terms.pop
       x.each do |k, v|
-        conditions[validate_key(k)] = v.downcase
+        if v == nil
+          conditions.delete(validate_key(k))
+        else
+          conditions[validate_key(k)] = v.downcase
+        end
       end
     end
 
@@ -149,10 +153,10 @@ class Miho
     end
   end
 
-  def context(*terms, &block)
+  def context(terms, &block)
     say_debug "Adding context: #{terms.inspect}"
 
-    @contexts << terms.first
+    @contexts << terms
     yield
     @contexts.pop
 
