@@ -122,8 +122,7 @@ class Miho
     end
 
     if terms.last.class == Hash
-      x = terms.pop
-      x.each do |k, v|
+      terms.pop.each do |k, v|
         if v == nil
           conditions.delete(validate_key(k))
         else
@@ -285,7 +284,7 @@ class Miho
   # Rather than having to do 'get :fred' all over the place
   # you can use the 'fred' as a method call and it will return
   # whatever value was set (if any)
-  def method_missing(m, *args, &block)  
+  def method_missing(m, *args, &block)
     get(m)
   end
 
