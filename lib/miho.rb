@@ -135,16 +135,16 @@ class Miho
     terms.each do |term|
       say_debug "Adding term: #{term}"
 
-      PatternReader.parse_sentence(term).each do |x|
-        say_debug "Rule term: #{x}"
+      PatternReader.parse_sentence(term).each do |parsed_term|
+        say_debug "Rule term: #{parsed_term}"
         @total += 1
         @terms << {
           :source       => term,
-          :term         => x,
-          :regexp       => Regexp.new("^#{x.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
+          :term         => parsed_term,
+          :regexp       => Regexp.new("^#{parsed_term.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
           :block        => block,
-          :size         => x.split(/\s+/).size,
-          :stars        => x.split(/\s+/).select{|i| i == "*"}.size,
+          :size         => parsed_term.split(/\s+/).size,
+          :stars        => parsed_term.split(/\s+/).select{|i| i == "*"}.size,
           :file         => @file_being_loaded,
           :conditions   => conditions,
           :n_conditions => conditions.size
@@ -293,8 +293,6 @@ class Miho
 
   def load_extras
     if @extras_filename
-      x = Hash.new
-
       if File.exist?(@extras_filename)
         File.open(@extras_filename).each do |line|
           input, output = line.chomp.split(/\t/)
