@@ -433,7 +433,7 @@ class Miho
   end
 end
 
-class Object
+module MihoX
   def miho(options = {}, &block)
     x = Miho.new(options)
     
@@ -441,3 +441,5 @@ class Object
     x.repl
   end
 end
+
+extend MihoX
