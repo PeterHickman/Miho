@@ -7,12 +7,10 @@ class Miho
     ##
 
     def self.parse_sentence(string)
-      expand(find_options(string.downcase.gsub(/\s+/,' ').strip)).map do |x|
+      expand(find_options(string.downcase.gsub(/\s+/, ' ').strip)).map do |x|
         x.join(' ').gsub(/_|\s+/, ' ').strip
       end
     end
-
-    private
 
     # Find tokens enclosed with [ and ] and turn them into a list
     # with an optional blank element. So [tom] will become [' ', 'tom']
@@ -20,7 +18,7 @@ class Miho
 
     def self.find_options(string)
       optionals = false
-      results = Array.new
+      results = []
 
       x = ''
 
@@ -55,7 +53,7 @@ class Miho
 
       results << find_alternates(x) unless x == ''
 
-      return results
+      results
     end
 
     # Turn alternates such as 'tom|dick|harry' into an array
@@ -73,7 +71,7 @@ class Miho
         return existing
       else
         head = heads.shift
-        longer = Array.new
+        longer = []
         existing.each do |e|
           if head.class == Array
             head.each do |y|
@@ -90,18 +88,18 @@ class Miho
   end
 
   def initialize(options = {})
-    @terms = Array.new
-    @memory = Hash.new
+    @terms = []
+    @memory = {}
     @matched = nil
     @checked = 0
     @total = 0
     @quit = false
     @debug = false
-    @extras = Hash.new
+    @extras = {}
     @matched_pattern = nil
-    @contexts = [Hash.new]
+    @contexts = [{}]
 
-    @last_lines = Array.new
+    @last_lines = []
 
     @extras_filename = options[:extras]
 
@@ -109,11 +107,11 @@ class Miho
   end
 
   def learn(*terms, &block)
-    conditions = Hash.new
+    conditions = {}
 
     @contexts.each do |context|
-      context.each do |k,v|
-        if v == nil
+      context.each do |k, v|
+        if v.nil?
           conditions.delete(validate_key(k))
         else
           conditions[validate_key(k)] = v.downcase
@@ -123,7 +121,7 @@ class Miho
 
     if terms.last.class == Hash
       terms.pop.each do |k, v|
-        if v == nil
+        if v.nil?
           conditions.delete(validate_key(k))
         else
           conditions[validate_key(k)] = v.downcase
@@ -138,21 +136,21 @@ class Miho
         say_debug "Rule term: #{parsed_term}"
         @total += 1
         @terms << {
-          :source       => term,
-          :term         => parsed_term,
-          :regexp       => Regexp.new("^#{parsed_term.gsub(/\?/, '\?').gsub(/\*/,'(.*)')}$"),
-          :block        => block,
-          :size         => parsed_term.split(/\s+/).size,
-          :stars        => parsed_term.split(/\s+/).select{|i| i == "*"}.size,
-          :file         => @file_being_loaded,
-          :conditions   => conditions,
-          :n_conditions => conditions.size
+          source:       term,
+          term:         parsed_term,
+          regexp:       Regexp.new("^#{parsed_term.gsub(/\?/, '\?').gsub(/\*/, '(.*)')}$"),
+          block:        block,
+          size:         parsed_term.split(/\s+/).size,
+          stars:        parsed_term.split(/\s+/).select { |i| i == '*' }.size,
+          file:         @file_being_loaded,
+          conditions:   conditions,
+          n_conditions: conditions.size
         }
       end
     end
   end
 
-  def context(terms, &block)
+  def context(terms)
     say_debug "Adding context: #{terms.inspect}"
 
     @contexts << terms
@@ -185,26 +183,26 @@ class Miho
 
     order_terms
 
-    miho_says "Hello, how are you?"
-    print "[You] "
+    miho_says 'Hello, how are you?'
+    print '[You] '
 
-    while line = STDIN.gets
+    while (line = STDIN.gets)
       response = process(line)
 
       miho_says response unless line =~ /^\s*$/
 
       break if @quit
-      
+
       debug_memory
 
-      print "[You] "
+      print '[You] '
     end
 
     save_extras
   end
 
   def process(line)
-    line = line.chomp.downcase.gsub(/\s+/,' ').strip
+    line = line.chomp.downcase.gsub(/\s+/, ' ').strip
 
     response = process_line(line)
 
@@ -224,11 +222,9 @@ class Miho
     remember(line, response)
 
     say_debug "Checked #{@checked} of #{@total} patterns"
-    if @matched_pattern
-      say_debug "matched #{@matched_pattern.inspect}"
-    end
+    say_debug "matched #{@matched_pattern.inspect}" if @matched_pattern
 
-    return response
+    response
   end
 
   def load(filename)
@@ -246,7 +242,7 @@ class Miho
   end
 
   def unload(filename)
-    @terms.delete_if{|t| t[:file] == filename}
+    @terms.delete_if { |t| t[:file] == filename }
     @total = @terms.size
   end
 
@@ -258,10 +254,10 @@ class Miho
 
   def set(*x)
     if x.size < 2
-      puts "set requires at least 2 arguments"
+      puts 'set requires at least 2 arguments'
     else
       v = x.pop
-      if v == nil
+      if v.nil?
         x.each do |k|
           @memory.delete(k)
         end
@@ -276,15 +272,15 @@ class Miho
 
   def dump_terms
     @terms.each_with_index do |term, index|
-      say_debug "%5d %s" % [index, term.inspect]
+      say_debug '%5d %s' % [index, term.inspect]
     end
-    ""
+    ''
   end
 
   # Rather than having to do 'get :fred' all over the place
   # you can use the 'fred' as a method call and it will return
   # whatever value was set (if any)
-  def method_missing(m, *args, &block)
+  def method_missing(m)
     get(m)
   end
 
@@ -295,15 +291,15 @@ class Miho
       if File.exist?(@extras_filename)
         File.open(@extras_filename).each do |line|
           input, output = line.chomp.split(/\t/)
-           @extras[input] = output
-         end
+          @extras[input] = output
+        end
       end
     end
   end
 
   def save_extras
     if @extras_filename
-      f = File.open(@extras_filename, "w")
+      f = File.open(@extras_filename, 'w')
       @extras.each do |input, output|
         f.puts "%s\t%s" % [input, output]
       end
@@ -356,9 +352,7 @@ class Miho
 
   def remember(input, output)
     @last_lines << [input, output]
-    if @last_lines.size > 10
-      @last_lines.shift
-    end
+    @last_lines.shift if @last_lines.size > 10
   end
 
   def say(line, transcript_only = false)
@@ -375,22 +369,20 @@ class Miho
   end
 
   def say_debug(text)
-    if @debug
-      say "<#{text}>"
-    end
+    say "<#{text}>" if @debug
   end
 
   def debug_memory
-    if @debug
-      @memory.each do |k,v|
-        say_debug "[#{k}] = [#{v}]"
-      end
+    return unless @debug
+
+    @memory.each do |k, v|
+      say_debug "[#{k}] = [#{v}]"
     end
   end
 
   def get_transcript_file(filename = nil)
     if filename
-      @transcript = File.new(filename, "a")
+      @transcript = File.new(filename, 'a')
     else
       @transcript = nil
     end
@@ -419,7 +411,7 @@ class Miho
   # that should be matched by the others. And you will get an error
 
   def order_terms
-    @terms.sort! do |a,b|
+    @terms.sort! do |a, b|
       if a[:stars] == b[:stars]
         if a[:size] == b[:size]
           b[:n_conditions] <=> a[:n_conditions]
@@ -436,7 +428,7 @@ end
 module MihoX
   def miho(options = {}, &block)
     x = Miho.new(options)
-    
+
     x.instance_eval(&block)
     x.repl
   end
