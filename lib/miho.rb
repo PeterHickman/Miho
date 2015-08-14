@@ -57,7 +57,7 @@ class Miho
     end
 
     # Turn alternates such as 'tom|dick|harry' into an array
-    # ['tom', 'dick', 'harry'] but leave strings without the '\'
+    # ['tom', 'dick', 'harry'] but leave strings without the '|'
     # as they are
 
     def self.find_alternates(string)
